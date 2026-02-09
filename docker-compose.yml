@@ -1,0 +1,25 @@
+version: '3'
+services:
+  sim:
+    image: f1tenth_gym_ros
+    build: ./src/f1tenth_gym_ros
+    volumes: 
+      - ./src/f1tenth_gym_ros:/sim_ws/src/f1tenth_gym_ros
+      - ./src/safety_node:/sim_ws/src/safety_node
+    environment:
+      - DISPLAY=novnc:0.0
+    networks:
+      - x11
+    stdin_open: true
+    tty: true 
+  novnc:  
+    image: theasp/novnc:latest
+    environment:
+      - DISPLAY_WIDTH=1728
+      - DISPLAY_HEIGHT=972
+    ports:
+      - "8080:8080"
+    networks:
+      - x11
+networks:
+  x11:
