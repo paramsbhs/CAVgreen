@@ -1,9 +1,9 @@
-version: '3'
 services:
   sim:
+    platform: linux/amd64
     image: f1tenth_gym_ros
     build: ./src/f1tenth_gym_ros
-    volumes: 
+    volumes:
       - ./src/f1tenth_gym_ros:/sim_ws/src/f1tenth_gym_ros
       - ./src/safety_node:/sim_ws/src/safety_node
     environment:
@@ -11,8 +11,9 @@ services:
     networks:
       - x11
     stdin_open: true
-    tty: true 
-  novnc:  
+    tty: true
+  novnc:
+    platform: linux/amd64
     image: theasp/novnc:latest
     environment:
       - DISPLAY_WIDTH=1728
