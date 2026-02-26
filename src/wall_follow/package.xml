@@ -1,17 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>safety_node</name>
+  <name>wall_follow</name>
   <version>0.0.1</version>
-  <description>Automatic Emergency Braking Safety Node</description>
-  <maintainer email="your@email.com">Your Name</maintainer>
+  <description>Wall Following with PID Controller</description>
+  <maintainer email="paramsbhs@gmail.com">Param Grewal</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
   <depend>sensor_msgs</depend>
-  <depend>nav_msgs</depend>
   <depend>ackermann_msgs</depend>
 
   <export>
