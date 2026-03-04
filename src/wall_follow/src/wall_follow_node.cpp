@@ -9,7 +9,16 @@ class WallFollow : public rclcpp::Node {
 public:
     WallFollow() : Node("wall_follow_node")
     {
-        // TODO: create ROS subscribers and publishers
+        scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
+            "/scan", 10, std::bind(&WallFollow::scan_callback, this, std::placeholders::_1)
+        );
+        odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
+            "/ego_racecar/odom", 10, std::bind(&WallFollow::odom_callback, this, std::placeholders::_1)
+        );
+
+        drive_pub_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("/drive", 10);
+    
+        RCLCPP_INFO(this->get_logger(), "Wall Follow Node Initialized");
     }
 
 private:
