@@ -38,7 +38,7 @@ private:
     rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr drive_pub_;
 
 
-    double get_range(const sensor_msgs::msg:LaserScan &scan, double angle) //changed parameter from range_data to &scan
+    double get_range(const sensor_msgs::msg::LaserScan &scan, double angle) //changed parameter from range_data to &scan
     {
 
         if(angle < scan.angle_min || angle > scan.angle_max){ //Clamp the out of bound angles

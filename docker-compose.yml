@@ -6,6 +6,7 @@ services:
     volumes:
       - ./src/f1tenth_gym_ros:/sim_ws/src/f1tenth_gym_ros
       - ./src/safety_node:/sim_ws/src/safety_node
+      - ./src/wall_follow:/sim_ws/src/wall_follow
     environment:
       - DISPLAY=novnc:0.0
     networks:
