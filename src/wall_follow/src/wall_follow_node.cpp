@@ -22,10 +22,11 @@ public:
     }
 
 private:
-    // PID CONTROL PARAMS
-    // TODO: double kp =
-    // TODO: double kd =
-    // TODO: double ki =
+    //for tuning: Increase kd to damp oscillation and reduce overshoot
+    // Only add a small amount of ki if needed
+    double kp = 0.9
+    double kd = 0.18 //Have to tune during testing
+    double ki = 0.0 
     double servo_offset = 0.0;
     double prev_error = 0.0;
     double error = 0.0;
@@ -34,7 +35,10 @@ private:
     // Topics
     std::string lidarscan_topic = "/scan";
     std::string drive_topic = "/drive";
-    /// TODO: create ROS subscribers and publishers
+    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_sub_;
+    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+    rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr drive_pub_;
+
 
     double get_range(float* range_data, double angle)
     {
@@ -50,6 +54,7 @@ private:
         */
 
         // TODO: implement
+
         return 0.0;
     }
 
