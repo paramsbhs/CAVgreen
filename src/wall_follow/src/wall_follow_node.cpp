@@ -63,21 +63,24 @@ private:
         return (double)range;
     }
 
-    double get_error(float* range_data, double dist)
+    double get_error(float* range_data, double dist) //Need to verify std::cos/std::sin parameters as it goes from -1 to 1
     {
-        /*
-        Calculates the error to the wall. Follow the wall to the left (going counter clockwise in the Levine loop). You potentially will need to use get_range()
-
-        Args:
-            range_data: single range array from the LiDAR
-            dist: desired distance to the wall
-
-        Returns:
-            error: calculated error
-        */
-
-        // TODO:implement
-        return 0.0;
+        float range = scan.ranges[index]; //error angle = offset dist/length
+        float angle_b = pi_v/2;
+        float angle_a = pi_v/4;
+        
+        float a = get_range(scan, -angle_a);
+        float b = get_range(scan, -angle_b)
+        
+        float angle = std::atan2f(a*std::cos(45)-b, a*std::sin(45)); //Arctan of angle A*cos(45)-B and A*sin(45)
+        float lookahead = 1.0; //this is how far the car is lookingahead in meters
+        double Dt = b * std::cos(angle); //perpedinculra distance to wall
+        double Dtfuture = Dt + lookahead*std::sin(angle); //future dist
+        
+        error = dist - Dtfuture;
+        
+        return error;
+    
     }
 
     void pid_control(double error, double velocity)
