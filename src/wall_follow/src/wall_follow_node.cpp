@@ -97,6 +97,8 @@ private:
         */
         double angle = 0.0;
         // TODO: Use kp, ki & kd to implement a PID controller
+        //need to calculate u(t). How do I deal with the integral and derivative components?
+        // double u = kp*error + ki*integral + kd*derivative*error
         auto drive_msg = ackermann_msgs::msg::AckermannDriveStamped();
         // TODO: fill in drive message and publish
     }
