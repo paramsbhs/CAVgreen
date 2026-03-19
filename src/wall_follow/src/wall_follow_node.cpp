@@ -11,12 +11,27 @@ class WallFollow : public rclcpp::Node {
 public:
     WallFollow() : Node("wall_follow_node")
     {
+        declare_parameter("kp", 0.9);
+        declare_parameter("ki", 0.0);
+        declare_parameter("kd", 0.18);
+        declare_parameter("desired_distance", 1.0);
+        declare_parameter("lookahead_L", 1.0);
+        declare_parameter("theta", 45.0);
+
+        kp = get_parameter("kp").as_double();
+        ki = get_parameter("ki").as_double();
+        kd = get_parameter("kd").as_double();
+        desired_distance_ = get_parameter("desired_distance").as_double();
+        lookahead_L_ = get_parameter("lookahead_L").as_double();
+        theta_ = get_parameter("theta").as_double() * M_PI / 180.0;
+
         scan_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
             "/scan", 10, std::bind(&WallFollow::scan_callback, this, std::placeholders::_1)
         );
 
         drive_pub_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("/drive", 10);
-    
+
+        prev_time_ = this->now();
         RCLCPP_INFO(this->get_logger(), "Wall Follow Node Initialized");
     }
 
@@ -28,8 +43,11 @@ private:
     double ki = 0.0;
     double servo_offset = 0.0;
     double prev_error = 0.0;
-    double error = 0.0;
     double integral = 0.0;
+    double desired_distance_ = 1.0;
+    double lookahead_L_ = 1.0;
+    double theta_ = M_PI / 4.0;
+    rclcpp::Time prev_time_;
 
     // Topics
     std::string lidarscan_topic = "/scan";
@@ -47,7 +65,7 @@ private:
 
         int index = (int)round((angle - scan.angle_min)/scan.angle_increment);
 
-        if(index < 0 || index >= scan.ranges.size()){ //check if index is valid
+        if(index < 0 || index >= (int)scan.ranges.size()){ //check if index is valid
             return std::numeric_limits<double>::infinity();
         }
 
@@ -63,62 +81,58 @@ private:
         return (double)range;
     }
 
-    double get_error(float* range_data, double dist) //Need to verify std::cos/std::sin parameters as it goes from -1 to 1
+    // side: -1.0 = right wall, +1.0 = left wall
+    double get_error(const sensor_msgs::msg::LaserScan &scan, double dist, double side)
     {
-        float range = scan.ranges[index]; //error angle = offset dist/length
-        float angle_b = pi_v/2;
-        float angle_a = pi_v/4;
-        
-        float a = get_range(scan, -angle_a);
-        float b = get_range(scan, -angle_b)
-        
-        float angle = std::atan2f(a*std::cos(45)-b, a*std::sin(45)); //Arctan of angle A*cos(45)-B and A*sin(45)
-        float lookahead = 1.0; //this is how far the car is lookingahead in meters
-        double Dt = b * std::cos(angle); //perpedinculra distance to wall
-        double Dtfuture = Dt + lookahead*std::sin(angle); //future dist
-        
-        error = dist - Dtfuture;
-        
-        return error;
-    
+        double a = get_range(scan, side * (M_PI / 2.0 - theta_));
+        double b = get_range(scan, side * M_PI / 2.0);
+
+        double angle = std::atan2(a * std::cos(theta_) - b, a * std::sin(theta_));
+        double Dt = b * std::cos(angle);           // perpendicular distance to wall
+        double Dtfuture = Dt + lookahead_L_ * std::sin(angle); // predicted future dist
+
+        return dist - Dtfuture;
     }
 
-    void pid_control(double error, double velocity)
+    void pid_control(double error, double dt)
     {
-        /*
-        Based on the calculated error, publish vehicle control
+        // Integral with anti-windup
+        const double MAX_INTEGRAL = 1.0;
+        integral = std::clamp(integral + error * dt, -MAX_INTEGRAL, MAX_INTEGRAL);
 
-        Args:
-            error: calculated error
-            velocity: desired velocity
+        double derivative = (dt > 0.0) ? (error - prev_error) / dt : 0.0;
+        double steering_angle = kp * error + ki * integral + kd * derivative;
+        prev_error = error;
 
-        Returns:
-            None
-        */
-        double angle = 0.0;
-        // TODO: Use kp, ki & kd to implement a PID controller
-        //need to calculate u(t). How do I deal with the integral and derivative components?
-        // double u = kp*error + ki*integral + kd*derivative*error
+        // Clamp to physical steering limit (~24 degrees)
+        const double MAX_STEER = 0.4189;
+        steering_angle = std::clamp(steering_angle, -MAX_STEER, MAX_STEER);
+
+        // Velocity based on steering demand: large correction = slow down
+        double abs_steer = std::abs(steering_angle);
+        double velocity;
+        if      (abs_steer < 0.1) velocity = 2.0;
+        else if (abs_steer < 0.2) velocity = 1.5;
+        else                      velocity = 0.8;
+
         auto drive_msg = ackermann_msgs::msg::AckermannDriveStamped();
-        // TODO: fill in drive message and publish
+        drive_msg.drive.steering_angle = steering_angle;
+        drive_msg.drive.speed = velocity;
+        drive_pub_->publish(drive_msg);
     }
 
     void scan_callback(const sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg)
     {
-        /*
-        Callback function for LaserScan messages. Calculate the error and publish the drive message in this function.
+        rclcpp::Time now = this->now();
+        double dt = (now - prev_time_).seconds();
+        prev_time_ = now;
 
-        Args:
-            msg: Incoming LaserScan message
+        // Dual-wall: centre between right and left walls
+        double right_error = get_error(*scan_msg, desired_distance_, -1.0);
+        double left_error  = get_error(*scan_msg, desired_distance_,  1.0);
+        double error = right_error - left_error;
 
-        Returns:
-            None
-        */
-        double error = 0.0; // TODO: replace with error calculated by get_error()
-        double velocity = 0.0; // TODO: calculate desired car velocity based on error
-        // TODO: actuate the car with PID
-        double b = get_range(*scan_msg, M_PI/2.0);
-
+        pid_control(error, dt);
     }
 
 };
