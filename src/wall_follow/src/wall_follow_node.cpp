@@ -48,6 +48,7 @@ private:
     double lookahead_L_ = 1.0;
     double theta_ = M_PI / 4.0;
     rclcpp::Time prev_time_;
+    bool first_scan_ = true;
 
     // Topics
     std::string lidarscan_topic = "/scan";
@@ -82,16 +83,24 @@ private:
     }
 
     // side: -1.0 = right wall, +1.0 = left wall
-    double get_error(const sensor_msgs::msg::LaserScan &scan, double dist, double side)
+    // Returns true if wall was detected, false if rays were invalid.
+    // On detection, sets dtfuture_out to the predicted perpendicular distance.
+    bool get_wall_dist(const sensor_msgs::msg::LaserScan &scan, double side, double &dtfuture_out)
     {
         double a = get_range(scan, side * (M_PI / 2.0 - theta_));
         double b = get_range(scan, side * M_PI / 2.0);
 
-        double angle = std::atan2(a * std::cos(theta_) - b, a * std::sin(theta_));
-        double Dt = b * std::cos(angle);           // perpendicular distance to wall
-        double Dtfuture = Dt + lookahead_L_ * std::sin(angle); // predicted future dist
+        if (!std::isfinite(a) || !std::isfinite(b)) {
+            return false;
+        }
 
-        return dist - Dtfuture;
+        double angle = std::atan2(a * std::cos(theta_) - b, a * std::sin(theta_));
+        // Clamp alpha so corner walls don't produce unrealistic heading estimates
+        const double MAX_ALPHA = M_PI / 6.0; // 30 degrees
+        angle = std::clamp(angle, -MAX_ALPHA, MAX_ALPHA);
+        double Dt = b * std::cos(angle);           // perpendicular distance to wall
+        dtfuture_out = Dt + lookahead_L_ * std::sin(angle);
+        return true;
     }
 
     void pid_control(double error, double dt)
@@ -100,9 +109,11 @@ private:
         const double MAX_INTEGRAL = 1.0;
         integral = std::clamp(integral + error * dt, -MAX_INTEGRAL, MAX_INTEGRAL);
 
-        double derivative = (dt > 0.0) ? (error - prev_error) / dt : 0.0;
-        double steering_angle = kp * error + ki * integral + kd * derivative;
+        // Skip derivative on burst-published scans where dt is near zero
+        const double MIN_DT = 0.01;
+        double derivative = (dt >= MIN_DT) ? (error - prev_error) / dt : 0.0;
         prev_error = error;
+        double steering_angle = kp * error + ki * integral + kd * derivative;
 
         // Clamp to physical steering limit (~24 degrees)
         const double MAX_STEER = 0.4189;
@@ -127,10 +138,29 @@ private:
         double dt = (now - prev_time_).seconds();
         prev_time_ = now;
 
-        // Dual-wall: centre between right and left walls
-        double right_error = get_error(*scan_msg, desired_distance_, -1.0);
-        double left_error  = get_error(*scan_msg, desired_distance_,  1.0);
-        double error = right_error - left_error;
+        double dtf_right, dtf_left;
+        bool right_ok = get_wall_dist(*scan_msg, -1.0, dtf_right);
+        bool left_ok  = get_wall_dist(*scan_msg,  1.0, dtf_left);
+
+        double error;
+        if (right_ok && left_ok) {
+            // Dual-wall: centre between both walls (desired_distance cancels out)
+            error = dtf_left - dtf_right;
+        } else if (right_ok) {
+            // Single right wall: limited correction so one missing wall doesn't max-steer
+            error = std::clamp(desired_distance_ - dtf_right, -0.5, 0.5);
+        } else if (left_ok) {
+            error = std::clamp(dtf_left - desired_distance_, -0.5, 0.5);
+        } else {
+            error = 0.0;  // no walls visible, go straight
+        }
+
+        // Skip first scan so prev_error is seeded before derivative runs
+        if (first_scan_) {
+            prev_error = error;
+            first_scan_ = false;
+            return;
+        }
 
         pid_control(error, dt);
     }
