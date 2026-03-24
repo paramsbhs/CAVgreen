@@ -20,11 +20,11 @@ def generate_launch_description():
                 config,
                 {'use_sim_time': False},
             ],
-            # Remap if your LiDAR driver publishes to a different topic name.
-            # Default /scan matches most ROS2 LiDAR drivers (rplidar, urg_node, etc.)
+            # Output goes to /drive_wall_follow so ackermann_mux can arbitrate
+            # priority against the safety node before forwarding to /drive → VESC.
             remappings=[
                 ('/scan', '/scan'),
-                ('/drive', '/drive'),
+                ('/drive', '/drive_wall_follow'),
             ],
             output='screen',
         )

@@ -25,7 +25,9 @@ def generate_launch_description():
                 # On hardware, VESC publishes odometry to /odom.
                 ('/ego_racecar/odom', '/odom'),
                 ('/scan', '/scan'),
-                ('/drive', '/drive'),
+                # Output goes to /drive_safety so ackermann_mux gives it
+                # priority 100 (beats wall_follow at priority 10).
+                ('/drive', '/drive_safety'),
             ],
             output='screen',
         )

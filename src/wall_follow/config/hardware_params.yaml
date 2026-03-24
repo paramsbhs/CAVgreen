@@ -1,6 +1,6 @@
 wall_follow_node:
   ros__parameters:
-    # PID gains - tuned for simulation, must be re-tuned on hardware (see Day 5 of roadmap)
+    # PID gains - tuned for simulation, must be re-tuned on hardware
     # Start with these conservative values and adjust:
     #   - Increase kp if car is slow to correct
     #   - Increase kd to damp oscillation around corners
@@ -10,7 +10,6 @@ wall_follow_node:
     kd: 0.1
 
     # Target distance from wall in metres
-    # 0.8 is a safe starting value for a narrow corridor
     desired_distance: 0.8
 
     # Lookahead distance for heading prediction in metres
@@ -18,8 +17,22 @@ wall_follow_node:
     lookahead_L: 0.5
 
     # Angle between the two LiDAR beams used for wall distance estimation (degrees)
-    # 45.0 works for most 2D LiDARs - only change if your geometry requires it
     theta: 45.0
 
-    # NOTE: Vehicle speeds are hardcoded in wall_follow_node.cpp (2.0 / 1.5 / 0.8 m/s).
-    # For first hardware runs, physically limit speed at the VESC level until PID is tuned.
+    # Speed tiers (m/s) — selected by steering demand.
+    # For first hardware runs, keep these low until PID is tuned.
+    speed_straight: 2.0
+    speed_mild: 1.5
+    speed_sharp: 0.8
+
+    # Steering thresholds (radians) that select speed tiers.
+    # abs(steer) < mild  → speed_straight
+    # abs(steer) < sharp → speed_mild
+    # else               → speed_sharp
+    steer_thresh_mild: 0.1
+    steer_thresh_sharp: 0.2
+
+    # Derivative low-pass filter coefficient (0.0–1.0).
+    # Lower = heavier smoothing (less noise, more lag).
+    # 0.3 is a good starting point for noisy LiDAR.
+    derivative_filter_alpha: 0.3

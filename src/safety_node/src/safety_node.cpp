@@ -37,8 +37,8 @@ private:
 
     void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
     {
-        // Only check if moving forward
-        if (current_speed_ < 0.1) {
+        // Only check if moving forward (small threshold to ignore encoder noise)
+        if (current_speed_ < 0.01) {
             return;
         }
 
