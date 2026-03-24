@@ -1,0 +1,6 @@
+safety_node:
+  ros__parameters:
+    # Time-to-collision threshold in seconds.
+    # Simulation used 0.5 s. Start at 1.0 s on hardware to give more reaction time.
+    # Decrease toward 0.5 s only after verifying brake response at your test speeds.
+    ttc_threshold: 1.0

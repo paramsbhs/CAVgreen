@@ -36,17 +36,17 @@ public:
     }
 
 private:
-    //for tuning: Increase kd to damp oscillation and reduce overshoot
-    // Only add a small amount of ki if needed
-    double kp = 0.9;
-    double kd = 0.18; //Have to tune during testing
-    double ki = 0.0;
+    // All tuning values come from hardware_params.yaml via declare_parameter() above.
+    // Edit config/hardware_params.yaml — do not hardcode values here.
+    double kp;
+    double kd;
+    double ki;
     double servo_offset = 0.0;
     double prev_error = 0.0;
     double integral = 0.0;
-    double desired_distance_ = 1.0;
-    double lookahead_L_ = 1.0;
-    double theta_ = M_PI / 4.0;
+    double desired_distance_;
+    double lookahead_L_;
+    double theta_;
     rclcpp::Time prev_time_;
     bool first_scan_ = true;
 
