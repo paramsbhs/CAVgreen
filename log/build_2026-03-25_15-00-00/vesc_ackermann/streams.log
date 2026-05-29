@@ -1,0 +1,101 @@
+[0.112s] Invoking command in '/home/cav330/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/cav330/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann -DCMAKE_INSTALL_PREFIX=/home/cav330/f1tenth_ws/install/vesc_ackermann
+[0.477s] -- The C compiler identification is GNU 9.4.0
+[0.820s] -- The CXX compiler identification is GNU 9.4.0
+[0.849s] -- Check for working C compiler: /usr/bin/cc
+[1.286s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.296s] -- Detecting C compiler ABI info
+[1.670s] -- Detecting C compiler ABI info - done
+[1.729s] -- Detecting C compile features
+[1.730s] -- Detecting C compile features - done
+[1.749s] -- Check for working CXX compiler: /usr/bin/c++
+[2.202s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.209s] -- Detecting CXX compiler ABI info
+[2.643s] -- Detecting CXX compiler ABI info - done
+[2.709s] -- Detecting CXX compile features
+[2.716s] -- Detecting CXX compile features - done
+[2.726s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[2.860s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.860s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.285s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.333s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[4.839s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.969s] -- Found FastRTPS: /opt/ros/foxy/include  
+[5.340s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.384s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[6.391s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.395s] -- Looking for pthread.h
+[6.836s] -- Looking for pthread.h - found
+[6.838s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.253s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[7.257s] -- Looking for pthread_create in pthreads
+[7.627s] -- Looking for pthread_create in pthreads - not found
+[7.627s] -- Looking for pthread_create in pthread
+[8.014s] -- Looking for pthread_create in pthread - found
+[8.019s] -- Found Threads: TRUE  
+[10.597s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[10.709s] -- Added test 'copyright' to check source files copyright and LICENSE
+[10.719s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.724s] -- Configured cppcheck include dirs: /home/cav330/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann/include
+[10.726s] -- Configured cppcheck exclude dirs and/or files: 
+[10.741s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.742s] -- Configured cpplint exclude dirs and/or files: 
+[10.751s] -- Added test 'lint_cmake' to check CMake code style
+[10.763s] -- Added test 'uncrustify' to check C / C++ code style
+[10.764s] -- Configured uncrustify additional arguments: 
+[10.777s] -- Added test 'xmllint' to check XML markup files
+[10.819s] -- Configuring done
+[10.976s] -- Generating done
+[11.030s] -- Build files have been written to: /home/cav330/f1tenth_ws/build/vesc_ackermann
+[11.103s] Invoked command in '/home/cav330/f1tenth_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/cav330/f1tenth_ws/src/f1tenth_system/vesc/vesc_ackermann -DCMAKE_INSTALL_PREFIX=/home/cav330/f1tenth_ws/install/vesc_ackermann
+[11.120s] Invoking command in '/home/cav330/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/vesc_ackermann -- -j4 -l4
+[11.398s] [35m[1mScanning dependencies of target ackermann_to_vesc_node[0m
+[11.675s] [ 14%] [32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o[0m
+[21.921s] [ 28%] [32m[1mLinking CXX executable ackermann_to_vesc_node[0m
+[22.435s] [ 28%] Built target ackermann_to_vesc_node
+[22.487s] [35m[1mScanning dependencies of target vesc_ackermann[0m
+[22.782s] [ 42%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o[0m
+[47.385s] [ 57%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[77.868s] [ 71%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[80.017s] [ 71%] Built target vesc_ackermann
+[80.074s] [35m[1mScanning dependencies of target vesc_to_odom_node[0m
+[80.292s] [ 85%] [32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o[0m
+[89.120s] [100%] [32m[1mLinking CXX executable vesc_to_odom_node[0m
+[89.629s] [100%] Built target vesc_to_odom_node
+[89.678s] Invoked command in '/home/cav330/f1tenth_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/vesc_ackermann -- -j4 -l4
+[89.690s] Invoking command in '/home/cav330/f1tenth_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/vesc_ackermann
+[89.739s] -- Install configuration: ""
+[89.740s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[89.745s] -- Set runtime path of "/home/cav330/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node" to ""
+[89.745s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[89.749s] -- Set runtime path of "/home/cav330/f1tenth_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node" to ""
+[89.750s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/include
+[89.750s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann
+[89.751s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[89.751s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[89.753s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[89.753s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[89.754s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+[89.805s] -- Set runtime path of "/home/cav330/f1tenth_ws/install/vesc_ackermann/lib/libvesc_ackermann.so" to ""
+[89.806s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch
+[89.807s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[89.807s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[89.808s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[89.809s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[89.810s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[89.811s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[89.812s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[89.813s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[89.813s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[89.814s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[89.815s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[89.816s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[89.817s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[89.818s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[89.820s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[89.825s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[89.826s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[89.826s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[89.827s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[89.827s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[89.827s] -- Installing: /home/cav330/f1tenth_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[89.847s] Invoked command in '/home/cav330/f1tenth_ws/build/vesc_ackermann' returned '0': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/vesc_ackermann

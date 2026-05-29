@@ -32,7 +32,7 @@ private:
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
         // Get longitudinal velocity
-        current_speed_ = msg->twist.twist.linear.x;
+        current_speed_ = std::abs(msg->twist.twist.linear.x);
     }
 
     void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)

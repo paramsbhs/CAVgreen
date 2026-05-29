@@ -1,0 +1,275 @@
+[0.000000] (-) TimerEvent: {}
+[0.001453] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001798] (-) JobUnselected: {'identifier': 'f1tenth_gym_ros'}
+[0.002331] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.004154] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.004295] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.004491] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.007574] (-) JobUnselected: {'identifier': 'safety_node'}
+[0.007747] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.007880] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.007993] (-) JobUnselected: {'identifier': 'vesc'}
+[0.008092] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.008170] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.008246] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.008334] (wall_follow) JobQueued: {'identifier': 'wall_follow', 'dependencies': OrderedDict()}
+[0.008429] (wall_follow) JobStarted: {'identifier': 'wall_follow'}
+[0.062477] (wall_follow) JobProgress: {'identifier': 'wall_follow', 'progress': 'cmake'}
+[0.067041] (wall_follow) JobProgress: {'identifier': 'wall_follow', 'progress': 'build'}
+[0.071522] (wall_follow) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cav330/f1tenth_ws/build/wall_follow', '--', '-j4', '-l4'], 'cwd': '/home/cav330/f1tenth_ws/build/wall_follow', 'env': OrderedDict([('NX_ROOT', '/home/cav330/.nx'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PULSE_CLIENTCONFIG', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/client.conf'), ('MAIL', '/var/mail/cav330'), ('USER', 'cav330'), ('XDG_SESSION_TYPE', 'x11'), ('NX_SYSTEM', '/usr/NX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cav330/f1tenth_ws/install/vesc_driver/lib:/home/cav330/f1tenth_ws/install/vesc_ackermann/lib:/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/cav330'), ('OLDPWD', '/home/cav330'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-iHMOF19Ufp,guid=224d6c24a4a4c01b02251e9869cd5efc'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/default.pa'), ('WAYLAND_DISPLAY', 'no'), ('COLCON_PREFIX_PATH', '/home/cav330/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cav330'), ('PULSE_SERVER', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/native.socket'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cav330'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/cav330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3375,unix/ubuntu:/tmp/.ICE-unix/3375'), ('PULSE_RUNTIME_PATH', '/run/user/1000/pulse'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04532f46_a1f9_4272_9ec7_6296a98fe190'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('PULSE_CONFIG', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/daemon.conf'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1001'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_TEMP', '/tmp'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/cav330/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/home/cav330/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NX_SESSION_ID', 'EA1148098DAC8E752C023658A3CC1BD3'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cav330/f1tenth_ws/build/wall_follow'), ('NX_RUNNER', '/usr/NX/bin/nxrunner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/ackermann_mux:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('NX_CONNECTION', '192.168.33.135 52858 192.168.33.130 4000'), ('NXDIR', '/usr/NX')]), 'shell': False}
+[0.100497] (-) TimerEvent: {}
+[0.202096] (-) TimerEvent: {}
+[0.303418] (-) TimerEvent: {}
+[0.334053] (wall_follow) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target wall_follow_node\x1b[0m\n'}
+[0.403669] (-) TimerEvent: {}
+[0.504623] (-) TimerEvent: {}
+[0.537538] (wall_follow) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/wall_follow_node.dir/src/wall_follow_node.cpp.o\x1b[0m\n'}
+[0.604887] (-) TimerEvent: {}
+[0.708484] (-) TimerEvent: {}
+[0.810199] (-) TimerEvent: {}
+[0.911155] (-) TimerEvent: {}
+[1.012841] (-) TimerEvent: {}
+[1.114498] (-) TimerEvent: {}
+[1.217932] (-) TimerEvent: {}
+[1.319118] (-) TimerEvent: {}
+[1.420192] (-) TimerEvent: {}
+[1.521237] (-) TimerEvent: {}
+[1.622230] (-) TimerEvent: {}
+[1.723286] (-) TimerEvent: {}
+[1.824280] (-) TimerEvent: {}
+[1.925896] (-) TimerEvent: {}
+[2.026809] (-) TimerEvent: {}
+[2.127935] (-) TimerEvent: {}
+[2.229117] (-) TimerEvent: {}
+[2.330056] (-) TimerEvent: {}
+[2.431065] (-) TimerEvent: {}
+[2.531952] (-) TimerEvent: {}
+[2.632773] (-) TimerEvent: {}
+[2.733699] (-) TimerEvent: {}
+[2.834598] (-) TimerEvent: {}
+[2.935544] (-) TimerEvent: {}
+[3.036388] (-) TimerEvent: {}
+[3.137358] (-) TimerEvent: {}
+[3.238272] (-) TimerEvent: {}
+[3.339310] (-) TimerEvent: {}
+[3.440290] (-) TimerEvent: {}
+[3.541399] (-) TimerEvent: {}
+[3.642365] (-) TimerEvent: {}
+[3.743502] (-) TimerEvent: {}
+[3.844432] (-) TimerEvent: {}
+[3.945425] (-) TimerEvent: {}
+[4.046328] (-) TimerEvent: {}
+[4.147243] (-) TimerEvent: {}
+[4.248130] (-) TimerEvent: {}
+[4.349073] (-) TimerEvent: {}
+[4.449956] (-) TimerEvent: {}
+[4.551008] (-) TimerEvent: {}
+[4.652046] (-) TimerEvent: {}
+[4.752993] (-) TimerEvent: {}
+[4.853956] (-) TimerEvent: {}
+[4.955011] (-) TimerEvent: {}
+[5.055907] (-) TimerEvent: {}
+[5.156835] (-) TimerEvent: {}
+[5.257796] (-) TimerEvent: {}
+[5.358751] (-) TimerEvent: {}
+[5.459736] (-) TimerEvent: {}
+[5.560697] (-) TimerEvent: {}
+[5.661637] (-) TimerEvent: {}
+[5.762589] (-) TimerEvent: {}
+[5.863612] (-) TimerEvent: {}
+[5.964505] (-) TimerEvent: {}
+[6.065483] (-) TimerEvent: {}
+[6.166441] (-) TimerEvent: {}
+[6.267476] (-) TimerEvent: {}
+[6.368462] (-) TimerEvent: {}
+[6.469391] (-) TimerEvent: {}
+[6.570320] (-) TimerEvent: {}
+[6.671367] (-) TimerEvent: {}
+[6.772325] (-) TimerEvent: {}
+[6.873357] (-) TimerEvent: {}
+[6.974260] (-) TimerEvent: {}
+[7.075428] (-) TimerEvent: {}
+[7.176370] (-) TimerEvent: {}
+[7.277350] (-) TimerEvent: {}
+[7.378342] (-) TimerEvent: {}
+[7.479340] (-) TimerEvent: {}
+[7.580309] (-) TimerEvent: {}
+[7.681255] (-) TimerEvent: {}
+[7.782211] (-) TimerEvent: {}
+[7.883123] (-) TimerEvent: {}
+[7.984028] (-) TimerEvent: {}
+[8.084962] (-) TimerEvent: {}
+[8.185897] (-) TimerEvent: {}
+[8.286855] (-) TimerEvent: {}
+[8.388290] (-) TimerEvent: {}
+[8.489195] (-) TimerEvent: {}
+[8.590077] (-) TimerEvent: {}
+[8.691027] (-) TimerEvent: {}
+[8.792062] (-) TimerEvent: {}
+[8.893021] (-) TimerEvent: {}
+[8.993983] (-) TimerEvent: {}
+[9.095016] (-) TimerEvent: {}
+[9.195893] (-) TimerEvent: {}
+[9.296766] (-) TimerEvent: {}
+[9.397663] (-) TimerEvent: {}
+[9.498606] (-) TimerEvent: {}
+[9.599636] (-) TimerEvent: {}
+[9.700570] (-) TimerEvent: {}
+[9.801527] (-) TimerEvent: {}
+[9.902496] (-) TimerEvent: {}
+[10.003486] (-) TimerEvent: {}
+[10.104434] (-) TimerEvent: {}
+[10.205331] (-) TimerEvent: {}
+[10.306221] (-) TimerEvent: {}
+[10.407290] (-) TimerEvent: {}
+[10.508294] (-) TimerEvent: {}
+[10.609292] (-) TimerEvent: {}
+[10.710334] (-) TimerEvent: {}
+[10.811307] (-) TimerEvent: {}
+[10.912288] (-) TimerEvent: {}
+[11.013349] (-) TimerEvent: {}
+[11.114407] (-) TimerEvent: {}
+[11.215475] (-) TimerEvent: {}
+[11.316973] (-) TimerEvent: {}
+[11.418018] (-) TimerEvent: {}
+[11.519667] (-) TimerEvent: {}
+[11.620686] (-) TimerEvent: {}
+[11.721739] (-) TimerEvent: {}
+[11.822735] (-) TimerEvent: {}
+[11.923838] (-) TimerEvent: {}
+[12.024817] (-) TimerEvent: {}
+[12.125707] (-) TimerEvent: {}
+[12.226745] (-) TimerEvent: {}
+[12.327769] (-) TimerEvent: {}
+[12.428686] (-) TimerEvent: {}
+[12.529832] (-) TimerEvent: {}
+[12.631181] (-) TimerEvent: {}
+[12.732661] (-) TimerEvent: {}
+[12.833762] (-) TimerEvent: {}
+[12.934785] (-) TimerEvent: {}
+[13.035777] (-) TimerEvent: {}
+[13.136730] (-) TimerEvent: {}
+[13.237741] (-) TimerEvent: {}
+[13.338781] (-) TimerEvent: {}
+[13.439761] (-) TimerEvent: {}
+[13.540768] (-) TimerEvent: {}
+[13.641610] (-) TimerEvent: {}
+[13.742440] (-) TimerEvent: {}
+[13.843442] (-) TimerEvent: {}
+[13.944448] (-) TimerEvent: {}
+[14.045492] (-) TimerEvent: {}
+[14.146564] (-) TimerEvent: {}
+[14.247537] (-) TimerEvent: {}
+[14.348409] (-) TimerEvent: {}
+[14.449339] (-) TimerEvent: {}
+[14.550298] (-) TimerEvent: {}
+[14.651746] (-) TimerEvent: {}
+[14.753054] (-) TimerEvent: {}
+[14.854009] (-) TimerEvent: {}
+[14.955122] (-) TimerEvent: {}
+[15.056102] (-) TimerEvent: {}
+[15.157132] (-) TimerEvent: {}
+[15.258740] (-) TimerEvent: {}
+[15.360348] (-) TimerEvent: {}
+[15.461910] (-) TimerEvent: {}
+[15.562874] (-) TimerEvent: {}
+[15.664214] (-) TimerEvent: {}
+[15.766849] (-) TimerEvent: {}
+[15.869731] (-) TimerEvent: {}
+[15.970608] (-) TimerEvent: {}
+[16.073012] (-) TimerEvent: {}
+[16.176010] (-) TimerEvent: {}
+[16.277843] (-) TimerEvent: {}
+[16.378830] (-) TimerEvent: {}
+[16.479886] (-) TimerEvent: {}
+[16.580884] (-) TimerEvent: {}
+[16.681817] (-) TimerEvent: {}
+[16.782992] (-) TimerEvent: {}
+[16.884061] (-) TimerEvent: {}
+[16.985259] (-) TimerEvent: {}
+[17.087912] (-) TimerEvent: {}
+[17.188889] (-) TimerEvent: {}
+[17.290167] (-) TimerEvent: {}
+[17.393187] (-) TimerEvent: {}
+[17.495504] (-) TimerEvent: {}
+[17.596633] (-) TimerEvent: {}
+[17.698719] (-) TimerEvent: {}
+[17.800089] (-) TimerEvent: {}
+[17.901118] (-) TimerEvent: {}
+[18.002776] (-) TimerEvent: {}
+[18.104520] (-) TimerEvent: {}
+[18.208731] (-) TimerEvent: {}
+[18.313419] (-) TimerEvent: {}
+[18.414641] (-) TimerEvent: {}
+[18.515777] (-) TimerEvent: {}
+[18.616828] (-) TimerEvent: {}
+[18.717723] (-) TimerEvent: {}
+[18.818662] (-) TimerEvent: {}
+[18.919668] (-) TimerEvent: {}
+[19.021467] (-) TimerEvent: {}
+[19.122340] (-) TimerEvent: {}
+[19.223246] (-) TimerEvent: {}
+[19.324186] (-) TimerEvent: {}
+[19.425270] (-) TimerEvent: {}
+[19.526279] (-) TimerEvent: {}
+[19.627369] (-) TimerEvent: {}
+[19.728359] (-) TimerEvent: {}
+[19.829300] (-) TimerEvent: {}
+[19.930311] (-) TimerEvent: {}
+[20.031314] (-) TimerEvent: {}
+[20.132298] (-) TimerEvent: {}
+[20.233276] (-) TimerEvent: {}
+[20.334217] (-) TimerEvent: {}
+[20.435268] (-) TimerEvent: {}
+[20.536330] (-) TimerEvent: {}
+[20.637288] (-) TimerEvent: {}
+[20.738498] (-) TimerEvent: {}
+[20.841564] (-) TimerEvent: {}
+[20.942623] (-) TimerEvent: {}
+[20.971363] (wall_follow) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable wall_follow_node\x1b[0m\n'}
+[21.042918] (-) TimerEvent: {}
+[21.143967] (-) TimerEvent: {}
+[21.245020] (-) TimerEvent: {}
+[21.346157] (-) TimerEvent: {}
+[21.447430] (-) TimerEvent: {}
+[21.548737] (-) TimerEvent: {}
+[21.649815] (-) TimerEvent: {}
+[21.750821] (-) TimerEvent: {}
+[21.851884] (-) TimerEvent: {}
+[21.953047] (-) TimerEvent: {}
+[22.054068] (-) TimerEvent: {}
+[22.113556] (wall_follow) StdoutLine: {'line': b'[100%] Built target wall_follow_node\n'}
+[22.154322] (-) TimerEvent: {}
+[22.190612] (wall_follow) CommandEnded: {'returncode': 0}
+[22.199693] (wall_follow) JobProgress: {'identifier': 'wall_follow', 'progress': 'install'}
+[22.255970] (-) TimerEvent: {}
+[22.263766] (wall_follow) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cav330/f1tenth_ws/build/wall_follow'], 'cwd': '/home/cav330/f1tenth_ws/build/wall_follow', 'env': OrderedDict([('NX_ROOT', '/home/cav330/.nx'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PULSE_CLIENTCONFIG', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/client.conf'), ('MAIL', '/var/mail/cav330'), ('USER', 'cav330'), ('XDG_SESSION_TYPE', 'x11'), ('NX_SYSTEM', '/usr/NX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cav330/f1tenth_ws/install/vesc_driver/lib:/home/cav330/f1tenth_ws/install/vesc_ackermann/lib:/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/cav330'), ('OLDPWD', '/home/cav330'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-iHMOF19Ufp,guid=224d6c24a4a4c01b02251e9869cd5efc'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/default.pa'), ('WAYLAND_DISPLAY', 'no'), ('COLCON_PREFIX_PATH', '/home/cav330/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cav330'), ('PULSE_SERVER', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/native.socket'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cav330'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/cav330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3375,unix/ubuntu:/tmp/.ICE-unix/3375'), ('PULSE_RUNTIME_PATH', '/run/user/1000/pulse'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04532f46_a1f9_4272_9ec7_6296a98fe190'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('PULSE_CONFIG', '/home/cav330/.nx/devices/D-1001-EA1148098DAC8E752C023658A3CC1BD3/audio/daemon.conf'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1001'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_TEMP', '/tmp'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/cav330/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/home/cav330/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NX_SESSION_ID', 'EA1148098DAC8E752C023658A3CC1BD3'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cav330/f1tenth_ws/build/wall_follow'), ('NX_RUNNER', '/usr/NX/bin/nxrunner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/ackermann_mux:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('NX_CONNECTION', '192.168.33.135 52858 192.168.33.130 4000'), ('NXDIR', '/usr/NX')]), 'shell': False}
+[22.315906] (wall_follow) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.317289] (wall_follow) StdoutLine: {'line': b'-- Installing: /home/cav330/f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node\n'}
+[22.336394] (wall_follow) StdoutLine: {'line': b'-- Set runtime path of "/home/cav330/f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node" to ""\n'}
+[22.337325] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch\n'}
+[22.338057] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch/wall_follow_launch.py\n'}
+[22.338497] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch/wall_follow_hardware_launch.py\n'}
+[22.339029] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch/hardware_launch.py\n'}
+[22.339438] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/config\n'}
+[22.339883] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/config/mux_params.yaml\n'}
+[22.340331] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/config/hardware_params.yaml\n'}
+[22.340681] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/ament_index/resource_index/package_run_dependencies/wall_follow\n'}
+[22.341107] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/ament_index/resource_index/parent_prefix_path/wall_follow\n'}
+[22.341555] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.sh\n'}
+[22.341918] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.dsv\n'}
+[22.342204] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.sh\n'}
+[22.342499] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.dsv\n'}
+[22.342900] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.bash\n'}
+[22.343664] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.sh\n'}
+[22.343989] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.zsh\n'}
+[22.344382] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.dsv\n'}
+[22.344656] (wall_follow) StdoutLine: {'line': b'-- Installing: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/package.dsv\n'}
+[22.344999] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/ament_index/resource_index/packages/wall_follow\n'}
+[22.345383] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig.cmake\n'}
+[22.345658] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig-version.cmake\n'}
+[22.345965] (wall_follow) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/package.xml\n'}
+[22.350664] (wall_follow) CommandEnded: {'returncode': 0}
+[22.355880] (-) TimerEvent: {}
+[22.438598] (wall_follow) JobEnded: {'identifier': 'wall_follow', 'rc': 0}
+[22.442529] (-) EventReactorShutdown: {}

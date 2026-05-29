@@ -1,0 +1,27 @@
+[0.105s] Invoking command in '/home/cav330/f1tenth_ws/build/safety_node': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/safety_node -- -j4 -l4
+[0.537s] [100%] Built target safety_node
+[0.680s] Invoked command in '/home/cav330/f1tenth_ws/build/safety_node' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/safety_node -- -j4 -l4
+[0.713s] Invoking command in '/home/cav330/f1tenth_ws/build/safety_node': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/safety_node
+[0.774s] -- Install configuration: ""
+[0.777s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/lib/safety_node/safety_node
+[0.785s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch
+[0.785s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_hardware_launch.py
+[0.786s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_launch.py
+[0.787s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config
+[0.788s] -- Installing: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config/hardware_params.yaml
+[0.788s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node
+[0.789s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node
+[0.789s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh
+[0.790s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv
+[0.790s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.sh
+[0.791s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.dsv
+[0.791s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.bash
+[0.792s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.sh
+[0.792s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.zsh
+[0.793s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.dsv
+[0.793s] -- Installing: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.dsv
+[0.794s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node
+[0.794s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake
+[0.794s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake
+[0.795s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.xml
+[0.809s] Invoked command in '/home/cav330/f1tenth_ws/build/safety_node' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/safety_node

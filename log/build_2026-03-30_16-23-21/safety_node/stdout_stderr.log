@@ -1,0 +1,27 @@
+[35m[1mScanning dependencies of target safety_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable safety_node[0m
+[100%] Built target safety_node
+-- Install configuration: ""
+-- Installing: /home/cav330/f1tenth_ws/install/safety_node/lib/safety_node/safety_node
+-- Set runtime path of "/home/cav330/f1tenth_ws/install/safety_node/lib/safety_node/safety_node" to ""
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_hardware_launch.py
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_launch.py
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config/hardware_params.yaml
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.sh
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.dsv
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.bash
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.sh
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.zsh
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.dsv
+-- Installing: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.dsv
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake
+-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.xml

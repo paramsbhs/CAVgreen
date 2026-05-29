@@ -1,0 +1,4 @@
+Invoking command in '/home/cav330/f1tenth_ws/build/wall_follow': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/wall_follow -- -j4 -l4
+Invoked command in '/home/cav330/f1tenth_ws/build/wall_follow' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/wall_follow -- -j4 -l4
+Invoking command in '/home/cav330/f1tenth_ws/build/wall_follow': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/wall_follow
+Invoked command in '/home/cav330/f1tenth_ws/build/wall_follow' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/wall_follow

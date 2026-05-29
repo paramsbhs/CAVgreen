@@ -1,0 +1,4 @@
+Invoking command in '/home/cav330/f1tenth_ws/build/ackermann_mux': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/ackermann_mux -- -j4 -l4
+Invoked command in '/home/cav330/f1tenth_ws/build/ackermann_mux' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/ackermann_mux -- -j4 -l4
+Invoking command in '/home/cav330/f1tenth_ws/build/ackermann_mux': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/ackermann_mux
+Invoked command in '/home/cav330/f1tenth_ws/build/ackermann_mux' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/ackermann_mux

@@ -1,0 +1,14 @@
+ackermann_mux:
+  ros__parameters:
+    # Topics fed into the mux. Higher priority wins.
+    # safety_node MUST have higher priority so its brake command cannot be
+    # overridden by wall_follow while an emergency is active.
+    topics:
+      navigation:
+        topic: /drive_wall_follow
+        timeout: 0.5      # seconds — stops car if wall_follow goes silent
+        priority: 10
+      safety:
+        topic: /drive_safety
+        timeout: 0.1      # short timeout so stale brake commands expire quickly
+        priority: 100     # always beats navigation

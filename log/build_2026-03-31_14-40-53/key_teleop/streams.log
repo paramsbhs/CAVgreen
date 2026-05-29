@@ -1,0 +1,21 @@
+[5.542s] Invoking command in '/home/cav330/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 PYTHONPATH=/home/cav330/f1tenth_ws/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /home/cav330/f1tenth_ws/build/key_teleop/build install --record /home/cav330/f1tenth_ws/build/key_teleop/install.log --install-scripts $base/lib/key_teleop --single-version-externally-managed install_data
+[6.855s] running egg_info
+[6.857s] writing ../../../../build/key_teleop/key_teleop.egg-info/PKG-INFO
+[6.858s] writing dependency_links to ../../../../build/key_teleop/key_teleop.egg-info/dependency_links.txt
+[6.859s] writing entry points to ../../../../build/key_teleop/key_teleop.egg-info/entry_points.txt
+[6.860s] writing requirements to ../../../../build/key_teleop/key_teleop.egg-info/requires.txt
+[6.861s] writing top-level names to ../../../../build/key_teleop/key_teleop.egg-info/top_level.txt
+[7.032s] reading manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[7.037s] writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[7.037s] running build
+[7.037s] running build_py
+[7.038s] running install
+[7.042s] running install_lib
+[7.049s] running install_data
+[7.050s] running install_egg_info
+[7.058s] removing '/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info' (and everything under it)
+[7.059s] Copying ../../../../build/key_teleop/key_teleop.egg-info to /home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info
+[7.065s] running install_scripts
+[7.148s] Installing key_teleop script to /home/cav330/f1tenth_ws/install/key_teleop/lib/key_teleop
+[7.151s] writing list of installed files to '/home/cav330/f1tenth_ws/build/key_teleop/install.log'
+[7.281s] Invoked command in '/home/cav330/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 PYTHONPATH=/home/cav330/f1tenth_ws/build/key_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /home/cav330/f1tenth_ws/build/key_teleop/build install --record /home/cav330/f1tenth_ws/build/key_teleop/install.log --install-scripts $base/lib/key_teleop --single-version-externally-managed install_data

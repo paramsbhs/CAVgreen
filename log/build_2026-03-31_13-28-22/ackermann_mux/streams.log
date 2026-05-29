@@ -1,0 +1,38 @@
+[0.197s] Invoking command in '/home/cav330/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50408 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/ackermann_mux -- -j4 -l4
+[1.562s] [100%] Built target ackermann_mux
+[1.580s] Invoked command in '/home/cav330/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50408 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/ackermann_mux -- -j4 -l4
+[1.649s] Invoking command in '/home/cav330/f1tenth_ws/build/ackermann_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50408 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/ackermann_mux
+[1.703s] -- Install configuration: ""
+[1.704s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/lib/ackermann_mux/ackermann_mux
+[1.706s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch
+[1.707s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/launch/ackermann_mux_launch.py
+[1.707s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config
+[1.708s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_locks.yaml
+[1.708s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/ackermann_mux_topics.yaml
+[1.709s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/config/joystick.yaml
+[1.709s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include
+[1.710s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux
+[1.712s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/topic_handle.hpp
+[1.712s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/params_helpers.hpp
+[1.713s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/utils.hpp
+[1.713s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics.hpp
+[1.714s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux_diagnostics_status.hpp
+[1.714s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/include/ackermann_mux/ackermann_mux.hpp
+[1.715s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/package_run_dependencies/ackermann_mux
+[1.715s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/parent_prefix_path/ackermann_mux
+[1.715s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.sh
+[1.716s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/ament_prefix_path.dsv
+[1.716s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.sh
+[1.716s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/environment/path.dsv
+[1.717s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.bash
+[1.717s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.sh
+[1.717s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.zsh
+[1.717s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/local_setup.dsv
+[1.718s] -- Installing: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.dsv
+[1.718s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ament_index/resource_index/packages/ackermann_mux
+[1.718s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.719s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.719s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig.cmake
+[1.747s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/cmake/ackermann_muxConfig-version.cmake
+[1.747s] -- Up-to-date: /home/cav330/f1tenth_ws/install/ackermann_mux/share/ackermann_mux/package.xml
+[1.748s] Invoked command in '/home/cav330/f1tenth_ws/build/ackermann_mux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50408 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/ackermann_mux

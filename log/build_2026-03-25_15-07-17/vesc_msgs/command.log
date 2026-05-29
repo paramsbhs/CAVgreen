@@ -1,0 +1,4 @@
+Invoking command in '/home/cav330/f1tenth_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/vesc_msgs -- -j4 -l4
+Invoked command in '/home/cav330/f1tenth_ws/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/vesc_msgs -- -j4 -l4
+Invoking command in '/home/cav330/f1tenth_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/vesc_msgs
+Invoked command in '/home/cav330/f1tenth_ws/build/vesc_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/vesc_msgs

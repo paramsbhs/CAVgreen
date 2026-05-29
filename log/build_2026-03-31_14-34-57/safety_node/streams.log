@@ -1,0 +1,27 @@
+[0.371s] Invoking command in '/home/cav330/f1tenth_ws/build/safety_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/safety_node -- -j4 -l4
+[0.841s] [100%] Built target safety_node
+[0.954s] Invoked command in '/home/cav330/f1tenth_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/safety_node -- -j4 -l4
+[0.977s] Invoking command in '/home/cav330/f1tenth_ws/build/safety_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/safety_node
+[1.063s] -- Install configuration: ""
+[1.065s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/lib/safety_node/safety_node
+[1.071s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch
+[1.072s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_hardware_launch.py
+[1.072s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_launch.py
+[1.073s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config
+[1.073s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config/hardware_params.yaml
+[1.073s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node
+[1.074s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node
+[1.074s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh
+[1.074s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv
+[1.075s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.sh
+[1.075s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.dsv
+[1.103s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.bash
+[1.105s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.sh
+[1.107s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.zsh
+[1.109s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.dsv
+[1.109s] -- Installing: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.dsv
+[1.109s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node
+[1.110s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake
+[1.110s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake
+[1.111s] -- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.xml
+[1.112s] Invoked command in '/home/cav330/f1tenth_ws/build/safety_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/safety_node

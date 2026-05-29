@@ -80,22 +80,22 @@ private:
             return std::numeric_limits<double>::infinity();
         }
 
-        int index = (int)round((angle - scan.angle_min)/scan.angle_increment);
+        int center = (int)round((angle - scan.angle_min)/scan.angle_increment);
+	
+        const int WINDOW = 2;
+	double sum = 0.0;
+	int count = 0;
+	for(int i = center - WINDOW; i <= center + WINDOW; i++){
+		if(i<0 || i>=(int)scan.ranges.size()) continue;
+		float r = scan.ranges[i];
+		if(std::isnan(r) || std::isinf(r)) continue;
+		sum += r;
+		count++;
+	}
 
-        if(index < 0 || index >= (int)scan.ranges.size()){ //check if index is valid
-            return std::numeric_limits<double>::infinity();
-        }
+        if(count == 0) return std::numeric_limits<double>::infinity();
 
-        float range = scan.ranges[index];
-        if(std::isnan(range) || std::isinf(range)){ //check if range is valid
-            return std::numeric_limits<double>::infinity();
-        }
-
-        if(range < scan.range_min || range > scan.range_max){
-            return std::numeric_limits<double>::infinity();
-        }
-
-        return (double)range;
+        return sum/count;
     }
 
     // side: -1.0 = right wall, +1.0 = left wall
@@ -112,7 +112,7 @@ private:
 
         double angle = std::atan2(a * std::cos(theta_) - b, a * std::sin(theta_));
         // Clamp alpha so corner walls don't produce unrealistic heading estimates
-        const double MAX_ALPHA = M_PI / 6.0; // 30 degrees
+        const double MAX_ALPHA = M_PI / 2.5; // 30 degrees
         angle = std::clamp(angle, -MAX_ALPHA, MAX_ALPHA);
         double Dt = b * std::cos(angle);           // perpendicular distance to wall
         dtfuture_out = Dt + lookahead_L_ * std::sin(angle);
@@ -132,8 +132,9 @@ private:
         filtered_derivative_ = deriv_alpha_ * raw_derivative
                              + (1.0 - deriv_alpha_) * filtered_derivative_;
         prev_error = error;
-        double steering_angle = kp * error + ki * integral + kd * filtered_derivative_;
-
+        double abs_err = std::abs(error);
+	double adaptive_kp = kp + kp*1.5*std::clamp(abs_err/desired_distance_, 0.0, 1.0);
+	double steering_angle = adaptive_kp*error+ki*integral+kd*filtered_derivative_;
         // Clamp to physical steering limit (~24 degrees)
         const double MAX_STEER = 0.4189;
         steering_angle = std::clamp(steering_angle, -MAX_STEER, MAX_STEER);
@@ -151,11 +152,47 @@ private:
         drive_pub_->publish(drive_msg);
     }
 
+
+    double get_front_range(const sensor_msgs::msg::LaserScan &scan, double front_angle){
+	double min_range = std::numeric_limits<double>::infinity();
+	for(double a = -front_angle; a <= front_angle; a += scan.angle_increment * 3.0){
+		double r = get_range(scan, a);
+		if(std::isfinite(r) && r < min_range){
+			min_range = r;
+		}
+	}
+	return min_range;
+
+    }
+
     void scan_callback(const sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg)
     {
         rclcpp::Time now = this->now();
         double dt = (now - prev_time_).seconds();
         prev_time_ = now;
+
+	const double FRONT_THRESHOLD = 1.2;
+	const double FRONT_CONE = M_PI/9.0;
+	double front_dist = get_front_range(*scan_msg, FRONT_CONE);
+	if(std::isfinite(front_dist) && front_dist < FRONT_THRESHOLD){
+		double right_range = get_range(*scan_msg, -M_PI / 2.0);
+		double left_range = get_range(*scan_msg, M_PI/2.0);
+		double turn_sign = 1.0;
+		if(std::isfinite(right_range) && std::isfinite(left_range)){
+			turn_sign = (right_range > left_range) ? -1.0 : 1.0;
+
+		}else if(std::isfinite(right_range)){
+			turn_sign = -1.0;
+		}
+		double urgency = 1.0 - (front_dist / FRONT_THRESHOLD);
+		const double MAX_STEER = 0.4189;
+		double steering_angle = turn_sign*MAX_STEER*std::clamp(urgency* 1.5, 0.3, 1.0);
+		auto drive_msg = ackermann_msgs::msg::AckermannDriveStamped();
+		drive_msg.drive.steering_angle = steering_angle;
+		drive_msg.drive.speed = speed_sharp_;
+		drive_pub_->publish(drive_msg);
+		return;
+	}
 
         double dtf_right, dtf_left;
         bool right_ok = get_wall_dist(*scan_msg, -1.0, dtf_right);
@@ -175,7 +212,7 @@ private:
 
         // Rate-limit error changes to avoid steering jerks at wall transitions
         // (e.g. corridor opening into a room where one wall disappears).
-        const double MAX_ERROR_JUMP = 0.15;  // max change per scan cycle
+        const double MAX_ERROR_JUMP = 0.35;  // max change per scan cycle
         double delta = error - prev_steering_error_;
         if (std::abs(delta) > MAX_ERROR_JUMP) {
             error = prev_steering_error_ + std::copysign(MAX_ERROR_JUMP, delta);

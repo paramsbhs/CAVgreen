@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.001111] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.001969] (-) JobUnselected: {'identifier': 'f1tenth_gym_ros'}
+[0.002590] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.003212] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.003427] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.003602] (-) JobUnselected: {'identifier': 'safety_node'}
+[0.003759] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.003909] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.004056] (-) JobUnselected: {'identifier': 'vesc'}
+[0.004223] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.004390] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.004535] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.004683] (-) JobUnselected: {'identifier': 'wall_follow'}
+[0.004773] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/home/cav330/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/cav330/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/cav330/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/cav330/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/cav330/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/cav330/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/cav330/f1tenth_ws/install/vesc')])}
+[0.004939] (f1tenth_stack) JobStarted: {'identifier': 'f1tenth_stack'}
+[0.102443] (-) TimerEvent: {}
+[0.208384] (-) TimerEvent: {}
+[0.310812] (-) TimerEvent: {}
+[0.413578] (-) TimerEvent: {}
+[0.514363] (-) TimerEvent: {}
+[0.616688] (-) TimerEvent: {}
+[0.719034] (-) TimerEvent: {}
+[0.820328] (-) TimerEvent: {}
+[0.927661] (-) TimerEvent: {}
+[1.028511] (-) TimerEvent: {}
+[1.130858] (-) TimerEvent: {}
+[1.232190] (-) TimerEvent: {}
+[1.332977] (-) TimerEvent: {}
+[1.435485] (-) TimerEvent: {}
+[1.536879] (-) TimerEvent: {}
+[1.638404] (-) TimerEvent: {}
+[1.739835] (-) TimerEvent: {}
+[1.842241] (-) TimerEvent: {}
+[1.944160] (-) TimerEvent: {}
+[2.045403] (-) TimerEvent: {}
+[2.146603] (-) TimerEvent: {}
+[2.247722] (-) TimerEvent: {}
+[2.348747] (-) TimerEvent: {}
+[2.450154] (-) TimerEvent: {}
+[2.551211] (-) TimerEvent: {}
+[2.652209] (-) TimerEvent: {}
+[2.753145] (-) TimerEvent: {}
+[2.854046] (-) TimerEvent: {}
+[2.956587] (-) TimerEvent: {}
+[3.057638] (-) TimerEvent: {}
+[3.159222] (-) TimerEvent: {}
+[3.260119] (-) TimerEvent: {}
+[3.361074] (-) TimerEvent: {}
+[3.462008] (-) TimerEvent: {}
+[3.562975] (-) TimerEvent: {}
+[3.664342] (-) TimerEvent: {}
+[3.765304] (-) TimerEvent: {}
+[3.866381] (-) TimerEvent: {}
+[3.967720] (-) TimerEvent: {}
+[4.068541] (-) TimerEvent: {}
+[4.169393] (-) TimerEvent: {}
+[4.270324] (-) TimerEvent: {}
+[4.352083] (f1tenth_stack) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../build/f1tenth_stack', 'build', '--build-base', '/home/cav330/f1tenth_ws/build/f1tenth_stack/build', 'install', '--record', '/home/cav330/f1tenth_ws/build/f1tenth_stack/install.log', '--install-scripts', '$base/lib/f1tenth_stack', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cav330/f1tenth_ws/src/f1tenth_system/f1tenth_stack', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cav330', 'SSH_AGENT_PID': '3457', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/cav330/f1tenth_ws/install/vesc_driver/lib:/home/cav330/f1tenth_ws/install/vesc_ackermann/lib:/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64', 'HOME': '/home/cav330', 'OLDPWD': '/home/cav330', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '3308', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/cav330/f1tenth_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'cav330', 'JOURNAL_STREAM': '8:61817', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cav330', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/cav330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/3522,unix/ubuntu:/tmp/.ICE-unix/3522', 'INVOCATION_ID': '6c56a7ad8d9a4c789a94fce1fd7dbec5', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b89d8692_e039_4786_af1e_5d9d92201c30', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.154', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/home/cav330/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cav330/f1tenth_ws/build/f1tenth_stack', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cav330/f1tenth_ws/build/f1tenth_stack/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/ackermann_mux:/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/safety_node'}, 'shell': False}
+[4.371832] (-) TimerEvent: {}
+[4.472980] (-) TimerEvent: {}
+[4.574547] (-) TimerEvent: {}
+[4.675641] (-) TimerEvent: {}
+[4.776453] (-) TimerEvent: {}
+[4.878111] (-) TimerEvent: {}
+[4.978990] (-) TimerEvent: {}
+[5.080023] (-) TimerEvent: {}
+[5.181889] (-) TimerEvent: {}
+[5.283588] (-) TimerEvent: {}
+[5.384428] (-) TimerEvent: {}
+[5.485255] (-) TimerEvent: {}
+[5.586136] (-) TimerEvent: {}
+[5.611561] (f1tenth_stack) StdoutLine: {'line': b'running egg_info\n'}
+[5.615065] (f1tenth_stack) StdoutLine: {'line': b'writing ../../../build/f1tenth_stack/f1tenth_stack.egg-info/PKG-INFO\n'}
+[5.616891] (f1tenth_stack) StdoutLine: {'line': b'writing dependency_links to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/dependency_links.txt\n'}
+[5.622416] (f1tenth_stack) StdoutLine: {'line': b'writing entry points to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/entry_points.txt\n'}
+[5.625102] (f1tenth_stack) StdoutLine: {'line': b'writing requirements to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/requires.txt\n'}
+[5.625635] (f1tenth_stack) StdoutLine: {'line': b'writing top-level names to ../../../build/f1tenth_stack/f1tenth_stack.egg-info/top_level.txt\n'}
+[5.686342] (-) TimerEvent: {}
+[5.787615] (-) TimerEvent: {}
+[5.798442] (f1tenth_stack) StdoutLine: {'line': b"reading manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[5.806870] (f1tenth_stack) StdoutLine: {'line': b"writing manifest file '../../../build/f1tenth_stack/f1tenth_stack.egg-info/SOURCES.txt'\n"}
+[5.808203] (f1tenth_stack) StdoutLine: {'line': b'running build\n'}
+[5.808879] (f1tenth_stack) StdoutLine: {'line': b'running build_py\n'}
+[5.812620] (f1tenth_stack) StdoutLine: {'line': b'running install\n'}
+[5.817950] (f1tenth_stack) StdoutLine: {'line': b'running install_lib\n'}
+[5.827206] (f1tenth_stack) StdoutLine: {'line': b'running install_data\n'}
+[5.829986] (f1tenth_stack) StdoutLine: {'line': b'copying config/joy_teleop.yaml -> /home/cav330/f1tenth_ws/install/f1tenth_stack/share/f1tenth_stack/config\n'}
+[5.832465] (f1tenth_stack) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.840855] (f1tenth_stack) StdoutLine: {'line': b"removing '/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info' (and everything under it)\n"}
+[5.842581] (f1tenth_stack) StdoutLine: {'line': b'Copying ../../../build/f1tenth_stack/f1tenth_stack.egg-info to /home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages/f1tenth_stack-0.0.1-py3.8.egg-info\n'}
+[5.847975] (f1tenth_stack) StdoutLine: {'line': b'running install_scripts\n'}
+[5.887883] (-) TimerEvent: {}
+[5.942170] (f1tenth_stack) StdoutLine: {'line': b'Installing tf_publisher script to /home/cav330/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[5.944081] (f1tenth_stack) StdoutLine: {'line': b'Installing throttle_interpolator script to /home/cav330/f1tenth_ws/install/f1tenth_stack/lib/f1tenth_stack\n'}
+[5.946046] (f1tenth_stack) StdoutLine: {'line': b"writing list of installed files to '/home/cav330/f1tenth_ws/build/f1tenth_stack/install.log'\n"}
+[5.988171] (-) TimerEvent: {}
+[6.066567] (f1tenth_stack) CommandEnded: {'returncode': 0}
+[6.089179] (-) TimerEvent: {}
+[6.163166] (f1tenth_stack) JobEnded: {'identifier': 'f1tenth_stack', 'rc': 0}
+[6.171619] (-) EventReactorShutdown: {}

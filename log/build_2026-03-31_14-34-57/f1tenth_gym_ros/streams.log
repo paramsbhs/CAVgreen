@@ -1,0 +1,21 @@
+[4.180s] Invoking command in '/home/cav330/f1tenth_ws/src/f1tenth_gym_ros': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 PYTHONPATH=/home/cav330/f1tenth_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/cav330/f1tenth_ws/build/f1tenth_gym_ros/build install --record /home/cav330/f1tenth_ws/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[5.700s] running egg_info
+[5.702s] writing ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/PKG-INFO
+[5.704s] writing dependency_links to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/dependency_links.txt
+[5.705s] writing entry points to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/entry_points.txt
+[5.706s] writing requirements to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/requires.txt
+[5.707s] writing top-level names to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/top_level.txt
+[5.868s] reading manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[5.872s] writing manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[5.873s] running build
+[5.873s] running build_py
+[5.876s] running install
+[5.879s] running install_lib
+[5.888s] running install_data
+[5.889s] running install_egg_info
+[5.898s] removing '/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros-0.0.0-py3.8.egg-info' (and everything under it)
+[5.900s] Copying ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info to /home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages/f1tenth_gym_ros-0.0.0-py3.8.egg-info
+[5.905s] running install_scripts
+[5.985s] Installing gym_bridge script to /home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/f1tenth_gym_ros
+[5.988s] writing list of installed files to '/home/cav330/f1tenth_ws/build/f1tenth_gym_ros/install.log'
+[6.167s] Invoked command in '/home/cav330/f1tenth_ws/src/f1tenth_gym_ros' returned '0': NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 PYTHONPATH=/home/cav330/f1tenth_ws/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/cav330/f1tenth_ws/build/f1tenth_gym_ros/build install --record /home/cav330/f1tenth_ws/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data

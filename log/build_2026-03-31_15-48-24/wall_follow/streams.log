@@ -1,0 +1,33 @@
+[0.062s] Invoking command in '/home/cav330/f1tenth_ws/build/wall_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/wall_follow -- -j4 -l4
+[0.318s] [35m[1mScanning dependencies of target wall_follow_node[0m
+[0.506s] [ 50%] [32mBuilding CXX object CMakeFiles/wall_follow_node.dir/src/wall_follow_node.cpp.o[0m
+[19.427s] [100%] [32m[1mLinking CXX executable wall_follow_node[0m
+[20.440s] [100%] Built target wall_follow_node
+[20.499s] Invoked command in '/home/cav330/f1tenth_ws/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --build /home/cav330/f1tenth_ws/build/wall_follow -- -j4 -l4
+[20.571s] Invoking command in '/home/cav330/f1tenth_ws/build/wall_follow': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/wall_follow
+[20.610s] -- Install configuration: ""
+[20.612s] -- Installing: /home/cav330/f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node
+[20.633s] -- Set runtime path of "/home/cav330/f1tenth_ws/install/wall_follow/lib/wall_follow/wall_follow_node" to ""
+[20.634s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch
+[20.634s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch/wall_follow_launch.py
+[20.634s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch/wall_follow_hardware_launch.py
+[20.635s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/launch/hardware_launch.py
+[20.635s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/config
+[20.636s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/config/mux_params.yaml
+[20.636s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/config/hardware_params.yaml
+[20.637s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/ament_index/resource_index/package_run_dependencies/wall_follow
+[20.637s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/ament_index/resource_index/parent_prefix_path/wall_follow
+[20.637s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.sh
+[20.638s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/ament_prefix_path.dsv
+[20.638s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.sh
+[20.640s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/environment/path.dsv
+[20.640s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.bash
+[20.641s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.sh
+[20.641s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.zsh
+[20.642s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/local_setup.dsv
+[20.642s] -- Installing: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/package.dsv
+[20.642s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/ament_index/resource_index/packages/wall_follow
+[20.643s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig.cmake
+[20.643s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/cmake/wall_followConfig-version.cmake
+[20.644s] -- Up-to-date: /home/cav330/f1tenth_ws/install/wall_follow/share/wall_follow/package.xml
+[20.655s] Invoked command in '/home/cav330/f1tenth_ws/build/wall_follow' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy NX_CONNECTION=192.168.33.135 50807 192.168.33.130 4000 /usr/bin/cmake --install /home/cav330/f1tenth_ws/build/wall_follow

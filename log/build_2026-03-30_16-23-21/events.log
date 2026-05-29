@@ -1,0 +1,394 @@
+[0.000000] (-) TimerEvent: {}
+[0.000701] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.000838] (-) JobUnselected: {'identifier': 'f1tenth_gym_ros'}
+[0.000948] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.001039] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.001568] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.001697] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.001794] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.001882] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.002166] (-) JobUnselected: {'identifier': 'vesc'}
+[0.002682] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.002916] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.003029] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.003131] (-) JobUnselected: {'identifier': 'wall_follow'}
+[0.003232] (safety_node) JobQueued: {'identifier': 'safety_node', 'dependencies': OrderedDict()}
+[0.003349] (safety_node) JobStarted: {'identifier': 'safety_node'}
+[0.061236] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'cmake'}
+[0.062116] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'build'}
+[0.063403] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cav330/f1tenth_ws/build/safety_node', '--', '-j4', '-l4'], 'cwd': '/home/cav330/f1tenth_ws/build/safety_node', 'env': OrderedDict([('NX_ROOT', '/home/cav330/.nx'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PULSE_CLIENTCONFIG', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/client.conf'), ('MAIL', '/var/mail/cav330'), ('USER', 'cav330'), ('XDG_SESSION_TYPE', 'x11'), ('NX_SYSTEM', '/usr/NX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cav330/f1tenth_ws/install/vesc_driver/lib:/home/cav330/f1tenth_ws/install/vesc_ackermann/lib:/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/cav330'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-1gzSD6Wl1K,guid=d4e8827e16524ec651a25cad69cafd2d'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/default.pa'), ('WAYLAND_DISPLAY', 'no'), ('COLCON_PREFIX_PATH', '/home/cav330/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cav330'), ('PULSE_SERVER', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/native.socket'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cav330'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/cav330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3540,unix/ubuntu:/tmp/.ICE-unix/3540'), ('PULSE_RUNTIME_PATH', '/run/user/1000/pulse'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1415c740_4480_4aec_b3c9_829264334640'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('PULSE_CONFIG', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/daemon.conf'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1001'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_TEMP', '/tmp'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/cav330/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/home/cav330/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NX_SESSION_ID', '5BBEA081E7CCC5FE47B3898213872B03'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cav330/f1tenth_ws/build/safety_node'), ('NX_RUNNER', '/usr/NX/bin/nxrunner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/ackermann_mux:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('NX_CONNECTION', '192.168.33.135 65380 192.168.33.130 4000'), ('NXDIR', '/usr/NX')]), 'shell': False}
+[0.089621] (-) TimerEvent: {}
+[0.191326] (-) TimerEvent: {}
+[0.292253] (-) TimerEvent: {}
+[0.395197] (-) TimerEvent: {}
+[0.402952] (safety_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target safety_node\x1b[0m\n'}
+[0.495430] (-) TimerEvent: {}
+[0.596383] (-) TimerEvent: {}
+[0.645954] (safety_node) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o\x1b[0m\n'}
+[0.697333] (-) TimerEvent: {}
+[0.799686] (-) TimerEvent: {}
+[0.900616] (-) TimerEvent: {}
+[1.001655] (-) TimerEvent: {}
+[1.102580] (-) TimerEvent: {}
+[1.203573] (-) TimerEvent: {}
+[1.304528] (-) TimerEvent: {}
+[1.405411] (-) TimerEvent: {}
+[1.506390] (-) TimerEvent: {}
+[1.607507] (-) TimerEvent: {}
+[1.708609] (-) TimerEvent: {}
+[1.809600] (-) TimerEvent: {}
+[1.910535] (-) TimerEvent: {}
+[2.011944] (-) TimerEvent: {}
+[2.114716] (-) TimerEvent: {}
+[2.216898] (-) TimerEvent: {}
+[2.318113] (-) TimerEvent: {}
+[2.419556] (-) TimerEvent: {}
+[2.520479] (-) TimerEvent: {}
+[2.621758] (-) TimerEvent: {}
+[2.722830] (-) TimerEvent: {}
+[2.823655] (-) TimerEvent: {}
+[2.924554] (-) TimerEvent: {}
+[3.025535] (-) TimerEvent: {}
+[3.126607] (-) TimerEvent: {}
+[3.227545] (-) TimerEvent: {}
+[3.328689] (-) TimerEvent: {}
+[3.429708] (-) TimerEvent: {}
+[3.530670] (-) TimerEvent: {}
+[3.631752] (-) TimerEvent: {}
+[3.732734] (-) TimerEvent: {}
+[3.833826] (-) TimerEvent: {}
+[3.934852] (-) TimerEvent: {}
+[4.035868] (-) TimerEvent: {}
+[4.136747] (-) TimerEvent: {}
+[4.237912] (-) TimerEvent: {}
+[4.338922] (-) TimerEvent: {}
+[4.439864] (-) TimerEvent: {}
+[4.540754] (-) TimerEvent: {}
+[4.641849] (-) TimerEvent: {}
+[4.742796] (-) TimerEvent: {}
+[4.843703] (-) TimerEvent: {}
+[4.944668] (-) TimerEvent: {}
+[5.045733] (-) TimerEvent: {}
+[5.147168] (-) TimerEvent: {}
+[5.248148] (-) TimerEvent: {}
+[5.349081] (-) TimerEvent: {}
+[5.450069] (-) TimerEvent: {}
+[5.551026] (-) TimerEvent: {}
+[5.652028] (-) TimerEvent: {}
+[5.752980] (-) TimerEvent: {}
+[5.854013] (-) TimerEvent: {}
+[5.954936] (-) TimerEvent: {}
+[6.055934] (-) TimerEvent: {}
+[6.156832] (-) TimerEvent: {}
+[6.259766] (-) TimerEvent: {}
+[6.360920] (-) TimerEvent: {}
+[6.462318] (-) TimerEvent: {}
+[6.563317] (-) TimerEvent: {}
+[6.664316] (-) TimerEvent: {}
+[6.765604] (-) TimerEvent: {}
+[6.866612] (-) TimerEvent: {}
+[6.967905] (-) TimerEvent: {}
+[7.068762] (-) TimerEvent: {}
+[7.169698] (-) TimerEvent: {}
+[7.270628] (-) TimerEvent: {}
+[7.371565] (-) TimerEvent: {}
+[7.472638] (-) TimerEvent: {}
+[7.573830] (-) TimerEvent: {}
+[7.674709] (-) TimerEvent: {}
+[7.776458] (-) TimerEvent: {}
+[7.877377] (-) TimerEvent: {}
+[7.978430] (-) TimerEvent: {}
+[8.079365] (-) TimerEvent: {}
+[8.180330] (-) TimerEvent: {}
+[8.281388] (-) TimerEvent: {}
+[8.382383] (-) TimerEvent: {}
+[8.483329] (-) TimerEvent: {}
+[8.584227] (-) TimerEvent: {}
+[8.685136] (-) TimerEvent: {}
+[8.786079] (-) TimerEvent: {}
+[8.886995] (-) TimerEvent: {}
+[8.987887] (-) TimerEvent: {}
+[9.088944] (-) TimerEvent: {}
+[9.190239] (-) TimerEvent: {}
+[9.291217] (-) TimerEvent: {}
+[9.392366] (-) TimerEvent: {}
+[9.495067] (-) TimerEvent: {}
+[9.597947] (-) TimerEvent: {}
+[9.699215] (-) TimerEvent: {}
+[9.800119] (-) TimerEvent: {}
+[9.901571] (-) TimerEvent: {}
+[10.005018] (-) TimerEvent: {}
+[10.107739] (-) TimerEvent: {}
+[10.208797] (-) TimerEvent: {}
+[10.309821] (-) TimerEvent: {}
+[10.410770] (-) TimerEvent: {}
+[10.511712] (-) TimerEvent: {}
+[10.612589] (-) TimerEvent: {}
+[10.713531] (-) TimerEvent: {}
+[10.814543] (-) TimerEvent: {}
+[10.915518] (-) TimerEvent: {}
+[11.016592] (-) TimerEvent: {}
+[11.117670] (-) TimerEvent: {}
+[11.222481] (-) TimerEvent: {}
+[11.323601] (-) TimerEvent: {}
+[11.424867] (-) TimerEvent: {}
+[11.525851] (-) TimerEvent: {}
+[11.626695] (-) TimerEvent: {}
+[11.727657] (-) TimerEvent: {}
+[11.828572] (-) TimerEvent: {}
+[11.929373] (-) TimerEvent: {}
+[12.030486] (-) TimerEvent: {}
+[12.131474] (-) TimerEvent: {}
+[12.232590] (-) TimerEvent: {}
+[12.333896] (-) TimerEvent: {}
+[12.434791] (-) TimerEvent: {}
+[12.535732] (-) TimerEvent: {}
+[12.636649] (-) TimerEvent: {}
+[12.737657] (-) TimerEvent: {}
+[12.838725] (-) TimerEvent: {}
+[12.939578] (-) TimerEvent: {}
+[13.040447] (-) TimerEvent: {}
+[13.141546] (-) TimerEvent: {}
+[13.242646] (-) TimerEvent: {}
+[13.343603] (-) TimerEvent: {}
+[13.444499] (-) TimerEvent: {}
+[13.545677] (-) TimerEvent: {}
+[13.646714] (-) TimerEvent: {}
+[13.747759] (-) TimerEvent: {}
+[13.848690] (-) TimerEvent: {}
+[13.949655] (-) TimerEvent: {}
+[14.050566] (-) TimerEvent: {}
+[14.151479] (-) TimerEvent: {}
+[14.252958] (-) TimerEvent: {}
+[14.354488] (-) TimerEvent: {}
+[14.456018] (-) TimerEvent: {}
+[14.556919] (-) TimerEvent: {}
+[14.658149] (-) TimerEvent: {}
+[14.758990] (-) TimerEvent: {}
+[14.859817] (-) TimerEvent: {}
+[14.960647] (-) TimerEvent: {}
+[15.061630] (-) TimerEvent: {}
+[15.162446] (-) TimerEvent: {}
+[15.263369] (-) TimerEvent: {}
+[15.364293] (-) TimerEvent: {}
+[15.465615] (-) TimerEvent: {}
+[15.566539] (-) TimerEvent: {}
+[15.667463] (-) TimerEvent: {}
+[15.768402] (-) TimerEvent: {}
+[15.869359] (-) TimerEvent: {}
+[15.970351] (-) TimerEvent: {}
+[16.071387] (-) TimerEvent: {}
+[16.172590] (-) TimerEvent: {}
+[16.274006] (-) TimerEvent: {}
+[16.375227] (-) TimerEvent: {}
+[16.476284] (-) TimerEvent: {}
+[16.577305] (-) TimerEvent: {}
+[16.678345] (-) TimerEvent: {}
+[16.779265] (-) TimerEvent: {}
+[16.880159] (-) TimerEvent: {}
+[16.981215] (-) TimerEvent: {}
+[17.085583] (-) TimerEvent: {}
+[17.186512] (-) TimerEvent: {}
+[17.287402] (-) TimerEvent: {}
+[17.388365] (-) TimerEvent: {}
+[17.495424] (-) TimerEvent: {}
+[17.596362] (-) TimerEvent: {}
+[17.697351] (-) TimerEvent: {}
+[17.798455] (-) TimerEvent: {}
+[17.899474] (-) TimerEvent: {}
+[18.000389] (-) TimerEvent: {}
+[18.101547] (-) TimerEvent: {}
+[18.202447] (-) TimerEvent: {}
+[18.303406] (-) TimerEvent: {}
+[18.404408] (-) TimerEvent: {}
+[18.505569] (-) TimerEvent: {}
+[18.606533] (-) TimerEvent: {}
+[18.707429] (-) TimerEvent: {}
+[18.808366] (-) TimerEvent: {}
+[18.909374] (-) TimerEvent: {}
+[19.010445] (-) TimerEvent: {}
+[19.111295] (-) TimerEvent: {}
+[19.212192] (-) TimerEvent: {}
+[19.313317] (-) TimerEvent: {}
+[19.414321] (-) TimerEvent: {}
+[19.515248] (-) TimerEvent: {}
+[19.616181] (-) TimerEvent: {}
+[19.717051] (-) TimerEvent: {}
+[19.818429] (-) TimerEvent: {}
+[19.919437] (-) TimerEvent: {}
+[20.020264] (-) TimerEvent: {}
+[20.121212] (-) TimerEvent: {}
+[20.222254] (-) TimerEvent: {}
+[20.323267] (-) TimerEvent: {}
+[20.424149] (-) TimerEvent: {}
+[20.525143] (-) TimerEvent: {}
+[20.626166] (-) TimerEvent: {}
+[20.727070] (-) TimerEvent: {}
+[20.828017] (-) TimerEvent: {}
+[20.928925] (-) TimerEvent: {}
+[21.029984] (-) TimerEvent: {}
+[21.130937] (-) TimerEvent: {}
+[21.232833] (-) TimerEvent: {}
+[21.334188] (-) TimerEvent: {}
+[21.435097] (-) TimerEvent: {}
+[21.535995] (-) TimerEvent: {}
+[21.636894] (-) TimerEvent: {}
+[21.738024] (-) TimerEvent: {}
+[21.838888] (-) TimerEvent: {}
+[21.939783] (-) TimerEvent: {}
+[22.040682] (-) TimerEvent: {}
+[22.141650] (-) TimerEvent: {}
+[22.242527] (-) TimerEvent: {}
+[22.343370] (-) TimerEvent: {}
+[22.444211] (-) TimerEvent: {}
+[22.545201] (-) TimerEvent: {}
+[22.646226] (-) TimerEvent: {}
+[22.747048] (-) TimerEvent: {}
+[22.847934] (-) TimerEvent: {}
+[22.948804] (-) TimerEvent: {}
+[23.049688] (-) TimerEvent: {}
+[23.150588] (-) TimerEvent: {}
+[23.251497] (-) TimerEvent: {}
+[23.352405] (-) TimerEvent: {}
+[23.453312] (-) TimerEvent: {}
+[23.554215] (-) TimerEvent: {}
+[23.655113] (-) TimerEvent: {}
+[23.756262] (-) TimerEvent: {}
+[23.857146] (-) TimerEvent: {}
+[23.958157] (-) TimerEvent: {}
+[24.059428] (-) TimerEvent: {}
+[24.160222] (-) TimerEvent: {}
+[24.261115] (-) TimerEvent: {}
+[24.362812] (-) TimerEvent: {}
+[24.464064] (-) TimerEvent: {}
+[24.564844] (-) TimerEvent: {}
+[24.665806] (-) TimerEvent: {}
+[24.766680] (-) TimerEvent: {}
+[24.867555] (-) TimerEvent: {}
+[24.968454] (-) TimerEvent: {}
+[25.069413] (-) TimerEvent: {}
+[25.170332] (-) TimerEvent: {}
+[25.271191] (-) TimerEvent: {}
+[25.372120] (-) TimerEvent: {}
+[25.473024] (-) TimerEvent: {}
+[25.573955] (-) TimerEvent: {}
+[25.674844] (-) TimerEvent: {}
+[25.775747] (-) TimerEvent: {}
+[25.876703] (-) TimerEvent: {}
+[25.977730] (-) TimerEvent: {}
+[26.079386] (-) TimerEvent: {}
+[26.180289] (-) TimerEvent: {}
+[26.281133] (-) TimerEvent: {}
+[26.382117] (-) TimerEvent: {}
+[26.483004] (-) TimerEvent: {}
+[26.583868] (-) TimerEvent: {}
+[26.684680] (-) TimerEvent: {}
+[26.785625] (-) TimerEvent: {}
+[26.886483] (-) TimerEvent: {}
+[26.987374] (-) TimerEvent: {}
+[27.088184] (-) TimerEvent: {}
+[27.190481] (-) TimerEvent: {}
+[27.291325] (-) TimerEvent: {}
+[27.392151] (-) TimerEvent: {}
+[27.493681] (-) TimerEvent: {}
+[27.594534] (-) TimerEvent: {}
+[27.695468] (-) TimerEvent: {}
+[27.796434] (-) TimerEvent: {}
+[27.897623] (-) TimerEvent: {}
+[27.998628] (-) TimerEvent: {}
+[28.099471] (-) TimerEvent: {}
+[28.200310] (-) TimerEvent: {}
+[28.301193] (-) TimerEvent: {}
+[28.402200] (-) TimerEvent: {}
+[28.503030] (-) TimerEvent: {}
+[28.604104] (-) TimerEvent: {}
+[28.705124] (-) TimerEvent: {}
+[28.806220] (-) TimerEvent: {}
+[28.907245] (-) TimerEvent: {}
+[29.008363] (-) TimerEvent: {}
+[29.109673] (-) TimerEvent: {}
+[29.210746] (-) TimerEvent: {}
+[29.311751] (-) TimerEvent: {}
+[29.412747] (-) TimerEvent: {}
+[29.514060] (-) TimerEvent: {}
+[29.615043] (-) TimerEvent: {}
+[29.716108] (-) TimerEvent: {}
+[29.817119] (-) TimerEvent: {}
+[29.918500] (-) TimerEvent: {}
+[30.020255] (-) TimerEvent: {}
+[30.121280] (-) TimerEvent: {}
+[30.222305] (-) TimerEvent: {}
+[30.323219] (-) TimerEvent: {}
+[30.424400] (-) TimerEvent: {}
+[30.526529] (-) TimerEvent: {}
+[30.627410] (-) TimerEvent: {}
+[30.728378] (-) TimerEvent: {}
+[30.829238] (-) TimerEvent: {}
+[30.930242] (-) TimerEvent: {}
+[31.031121] (-) TimerEvent: {}
+[31.132072] (-) TimerEvent: {}
+[31.233237] (-) TimerEvent: {}
+[31.334387] (-) TimerEvent: {}
+[31.435330] (-) TimerEvent: {}
+[31.536242] (-) TimerEvent: {}
+[31.637140] (-) TimerEvent: {}
+[31.738184] (-) TimerEvent: {}
+[31.839069] (-) TimerEvent: {}
+[31.940022] (-) TimerEvent: {}
+[32.040987] (-) TimerEvent: {}
+[32.142077] (-) TimerEvent: {}
+[32.242986] (-) TimerEvent: {}
+[32.343906] (-) TimerEvent: {}
+[32.444833] (-) TimerEvent: {}
+[32.545767] (-) TimerEvent: {}
+[32.645199] (safety_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable safety_node\x1b[0m\n'}
+[32.646054] (-) TimerEvent: {}
+[32.746686] (-) TimerEvent: {}
+[32.847642] (-) TimerEvent: {}
+[32.948539] (-) TimerEvent: {}
+[33.049380] (-) TimerEvent: {}
+[33.150304] (-) TimerEvent: {}
+[33.251289] (-) TimerEvent: {}
+[33.352421] (-) TimerEvent: {}
+[33.453363] (-) TimerEvent: {}
+[33.554402] (-) TimerEvent: {}
+[33.655626] (-) TimerEvent: {}
+[33.756554] (-) TimerEvent: {}
+[33.857559] (-) TimerEvent: {}
+[33.958839] (-) TimerEvent: {}
+[34.059765] (-) TimerEvent: {}
+[34.161133] (-) TimerEvent: {}
+[34.262537] (-) TimerEvent: {}
+[34.274461] (safety_node) StdoutLine: {'line': b'[100%] Built target safety_node\n'}
+[34.347782] (safety_node) CommandEnded: {'returncode': 0}
+[34.353842] (safety_node) JobProgress: {'identifier': 'safety_node', 'progress': 'install'}
+[34.363625] (-) TimerEvent: {}
+[34.417256] (safety_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cav330/f1tenth_ws/build/safety_node'], 'cwd': '/home/cav330/f1tenth_ws/build/safety_node', 'env': OrderedDict([('NX_ROOT', '/home/cav330/.nx'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PULSE_CLIENTCONFIG', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/client.conf'), ('MAIL', '/var/mail/cav330'), ('USER', 'cav330'), ('XDG_SESSION_TYPE', 'x11'), ('NX_SYSTEM', '/usr/NX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cav330/f1tenth_ws/install/vesc_driver/lib:/home/cav330/f1tenth_ws/install/vesc_ackermann/lib:/home/cav330/f1tenth_ws/install/vesc_msgs/lib:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64:'), ('HOME', '/home/cav330'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-1gzSD6Wl1K,guid=d4e8827e16524ec651a25cad69cafd2d'), ('COLORTERM', 'truecolor'), ('PULSE_SCRIPT', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/default.pa'), ('WAYLAND_DISPLAY', 'no'), ('COLCON_PREFIX_PATH', '/home/cav330/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'cav330'), ('PULSE_SERVER', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/native.socket'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cav330'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.4/bin:/home/cav330/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/3540,unix/ubuntu:/tmp/.ICE-unix/3540'), ('PULSE_RUNTIME_PATH', '/run/user/1000/pulse'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1415c740_4480_4aec_b3c9_829264334640'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('PULSE_CONFIG', '/home/cav330/.nx/devices/D-1001-5BBEA081E7CCC5FE47B3898213872B03/audio/daemon.conf'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1001'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('NX_TEMP', '/tmp'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/cav330/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/home/cav330/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NX_SESSION_ID', '5BBEA081E7CCC5FE47B3898213872B03'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cav330/f1tenth_ws/build/safety_node'), ('NX_RUNNER', '/usr/NX/bin/nxrunner'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cav330/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/cav330/f1tenth_ws/install/wall_follow:/home/cav330/f1tenth_ws/install/vesc:/home/cav330/f1tenth_ws/install/vesc_driver:/home/cav330/f1tenth_ws/install/vesc_ackermann:/home/cav330/f1tenth_ws/install/vesc_msgs:/home/cav330/f1tenth_ws/install/teleop_tools:/home/cav330/f1tenth_ws/install/teleop_tools_msgs:/home/cav330/f1tenth_ws/install/safety_node:/home/cav330/f1tenth_ws/install/ackermann_mux:/home/cav330/f1tenth_ws/install/f1tenth_stack:/home/cav330/f1tenth_ws/install/joy_teleop:/home/cav330/f1tenth_ws/install/mouse_teleop:/home/cav330/f1tenth_ws/install/key_teleop:/home/cav330/f1tenth_ws/install/f1tenth_gym_ros:/opt/ros/foxy'), ('NX_CONNECTION', '192.168.33.135 65380 192.168.33.130 4000'), ('NXDIR', '/usr/NX')]), 'shell': False}
+[34.463977] (-) TimerEvent: {}
+[34.480526] (safety_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.482263] (safety_node) StdoutLine: {'line': b'-- Installing: /home/cav330/f1tenth_ws/install/safety_node/lib/safety_node/safety_node\n'}
+[34.516106] (safety_node) StdoutLine: {'line': b'-- Set runtime path of "/home/cav330/f1tenth_ws/install/safety_node/lib/safety_node/safety_node" to ""\n'}
+[34.517166] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch\n'}
+[34.517703] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_hardware_launch.py\n'}
+[34.518374] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/launch/safety_node_launch.py\n'}
+[34.519141] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config\n'}
+[34.519693] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/config/hardware_params.yaml\n'}
+[34.520319] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/package_run_dependencies/safety_node\n'}
+[34.520936] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/parent_prefix_path/safety_node\n'}
+[34.521594] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.sh\n'}
+[34.522253] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/ament_prefix_path.dsv\n'}
+[34.522805] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.sh\n'}
+[34.523377] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/environment/path.dsv\n'}
+[34.523887] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.bash\n'}
+[34.525974] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.sh\n'}
+[34.530265] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.zsh\n'}
+[34.530727] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/local_setup.dsv\n'}
+[34.531043] (safety_node) StdoutLine: {'line': b'-- Installing: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.dsv\n'}
+[34.531400] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/ament_index/resource_index/packages/safety_node\n'}
+[34.531728] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig.cmake\n'}
+[34.532043] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/cmake/safety_nodeConfig-version.cmake\n'}
+[34.532456] (safety_node) StdoutLine: {'line': b'-- Up-to-date: /home/cav330/f1tenth_ws/install/safety_node/share/safety_node/package.xml\n'}
+[34.541742] (safety_node) CommandEnded: {'returncode': 0}
+[34.564834] (-) TimerEvent: {}
+[34.642934] (safety_node) JobEnded: {'identifier': 'safety_node', 'rc': 0}
+[34.646845] (-) EventReactorShutdown: {}

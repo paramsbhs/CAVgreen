@@ -1,0 +1,45 @@
+[3.921s] Invoking command in '/home/cav330/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/joy_teleop build --build-base /home/cav330/f1tenth_ws/build/joy_teleop/build install --record /home/cav330/f1tenth_ws/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data
+[5.235s] running egg_info
+[5.238s] creating ../../../../build/joy_teleop/joy_teleop.egg-info
+[5.239s] writing ../../../../build/joy_teleop/joy_teleop.egg-info/PKG-INFO
+[5.242s] writing dependency_links to ../../../../build/joy_teleop/joy_teleop.egg-info/dependency_links.txt
+[5.243s] writing entry points to ../../../../build/joy_teleop/joy_teleop.egg-info/entry_points.txt
+[5.244s] writing requirements to ../../../../build/joy_teleop/joy_teleop.egg-info/requires.txt
+[5.244s] writing top-level names to ../../../../build/joy_teleop/joy_teleop.egg-info/top_level.txt
+[5.253s] writing manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[5.430s] reading manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[5.437s] writing manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[5.438s] running build
+[5.438s] running build_py
+[5.439s] creating /home/cav330/f1tenth_ws/build/joy_teleop/build
+[5.440s] creating /home/cav330/f1tenth_ws/build/joy_teleop/build/lib
+[5.440s] creating /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[5.442s] copying joy_teleop/incrementer_server.py -> /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[5.443s] copying joy_teleop/__init__.py -> /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[5.443s] copying joy_teleop/joy_teleop.py -> /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[5.444s] running install
+[5.448s] running install_lib
+[5.454s] creating /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[5.454s] copying /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop/incrementer_server.py -> /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[5.455s] copying /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop/__init__.py -> /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[5.456s] copying /home/cav330/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop/joy_teleop.py -> /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[5.459s] byte-compiling /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/incrementer_server.py to incrementer_server.cpython-38.pyc
+[5.468s] byte-compiling /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/__init__.py to __init__.cpython-38.pyc
+[5.468s] byte-compiling /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/joy_teleop.py to joy_teleop.cpython-38.pyc
+[5.479s] running install_data
+[5.480s] copying package.xml -> /home/cav330/f1tenth_ws/install/joy_teleop/share/joy_teleop
+[5.485s] creating /home/cav330/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[5.486s] copying config/joy_teleop_example.yaml -> /home/cav330/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[5.487s] creating /home/cav330/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[5.487s] copying launch/example.launch.py -> /home/cav330/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[5.490s] creating /home/cav330/f1tenth_ws/install/joy_teleop/share/ament_index
+[5.491s] creating /home/cav330/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index
+[5.494s] creating /home/cav330/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[5.495s] copying resource/joy_teleop -> /home/cav330/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[5.496s] running install_egg_info
+[5.496s] Copying ../../../../build/joy_teleop/joy_teleop.egg-info to /home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info
+[5.501s] running install_scripts
+[5.597s] Installing incrementer_server script to /home/cav330/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[5.598s] Installing joy_teleop script to /home/cav330/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[5.600s] writing list of installed files to '/home/cav330/f1tenth_ws/build/joy_teleop/install.log'
+[5.720s] Invoked command in '/home/cav330/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/cav330/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cav330/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.4/lib64 PYTHONPATH=/home/cav330/f1tenth_ws/build/joy_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cav330/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/cav330/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/joy_teleop build --build-base /home/cav330/f1tenth_ws/build/joy_teleop/build install --record /home/cav330/f1tenth_ws/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data
