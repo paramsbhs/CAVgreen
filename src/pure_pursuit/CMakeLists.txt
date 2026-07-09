@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
-project(gap_follow)
+project(pure_pursuit)
 
-# std::clamp requires C++17
+# C++17 for std::clamp and structured bindings
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 17)
 endif()
@@ -20,7 +20,10 @@ foreach(PACKAGE
   nav_msgs
   ackermann_msgs
   sensor_msgs
-  std_msgs)
+  std_msgs
+  visualization_msgs
+  Eigen3
+  tf2_ros)
 
   find_package(${PACKAGE} REQUIRED)
 
@@ -28,16 +31,20 @@ endforeach()
 
 # Include Cpp "include" directory
 include_directories(include)
+include_directories(
+  ${EIGEN3_INCLUDE_DIRS}
+)
 
 # Create Cpp executable
-add_executable(reactive_node src/reactive_node.cpp)
-ament_target_dependencies(reactive_node 
-  rclcpp geometry_msgs ackermann_msgs nav_msgs sensor_msgs std_msgs
+add_executable(pure_pursuit_node src/pure_pursuit_node.cpp)
+
+ament_target_dependencies(pure_pursuit_node 
+  rclcpp geometry_msgs ackermann_msgs nav_msgs sensor_msgs std_msgs visualization_msgs tf2_ros
 )
 
 # Install Cpp executables
 install(TARGETS
-  reactive_node
+  pure_pursuit_node
   DESTINATION lib/${PROJECT_NAME})
 
 # Install Python modules
@@ -45,13 +52,15 @@ ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/reactive_node.py
+  scripts/pure_pursuit_node.py
+  scripts/waypoint_logger.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
 install(DIRECTORY
   launch
   config
+  waypoints
   DESTINATION share/${PROJECT_NAME}
 )
 

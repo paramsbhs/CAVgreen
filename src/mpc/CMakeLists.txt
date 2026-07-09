@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
-project(gap_follow)
+project(mpc)
 
-# std::clamp requires C++17
+# Default to C++17 (required for structured bindings)
 if(NOT CMAKE_CXX_STANDARD)
   set(CMAKE_CXX_STANDARD 17)
 endif()
@@ -20,32 +20,57 @@ foreach(PACKAGE
   nav_msgs
   ackermann_msgs
   sensor_msgs
-  std_msgs)
+  std_msgs
+  visualization_msgs
+  Eigen3
+  tf2
+  tf2_ros)
 
   find_package(${PACKAGE} REQUIRED)
 
 endforeach()
 
+# OsqpEigen is optional: the primary implementation is the Python/CVXPY node.
+# The C++ node is only built where osqp-eigen is installed (e.g. the Jetson).
+find_package(OsqpEigen QUIET)
+
 # Include Cpp "include" directory
 include_directories(include)
-
-# Create Cpp executable
-add_executable(reactive_node src/reactive_node.cpp)
-ament_target_dependencies(reactive_node 
-  rclcpp geometry_msgs ackermann_msgs nav_msgs sensor_msgs std_msgs
+include_directories(
+  ${EIGEN3_INCLUDE_DIRS}
 )
 
-# Install Cpp executables
-install(TARGETS
-  reactive_node
-  DESTINATION lib/${PROJECT_NAME})
+if(OsqpEigen_FOUND)
+  # Create Cpp executable
+  add_executable(mpc_node src/mpc_node.cpp)
+
+  target_include_directories(mpc_node PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+    ${EIGEN3_INCLUDE_DIRS}
+  )
+
+  ament_target_dependencies(mpc_node
+    rclcpp geometry_msgs ackermann_msgs nav_msgs sensor_msgs std_msgs visualization_msgs tf2 tf2_ros
+  )
+
+  target_link_libraries(mpc_node OsqpEigen::OsqpEigen)
+
+  # Install Cpp executables
+  install(TARGETS
+    mpc_node
+    DESTINATION lib/${PROJECT_NAME})
+else()
+  message(STATUS "OsqpEigen not found - skipping C++ mpc_node (Python node still installed)")
+endif()
 
 # Install Python modules
 ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
-  scripts/reactive_node.py
+  scripts/mpc_node.py
+  scripts/utils.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

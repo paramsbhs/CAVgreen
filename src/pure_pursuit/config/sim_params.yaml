@@ -1,0 +1,23 @@
+pure_pursuit_node:
+  ros__parameters:
+    # Lookahead distance L in metres. Larger = smoother but cuts corners;
+    # smaller = tighter tracking but oscillates. Tune 0.8-2.5.
+    lookahead_distance: 1.5
+    # Scale lookahead with speed: L = clamp(lookahead_gain * v, min, max).
+    # Set gain to 0.0 to use the fixed lookahead_distance only.
+    lookahead_gain: 0.45
+    lookahead_min: 1.0
+    lookahead_max: 2.5
+
+    # Steering limit of the car (rad)
+    max_steering_angle: 0.4189
+
+    # Velocity: taken from the waypoint CSV "speed" column scaled by
+    # velocity_scale; capped at max_speed. If the CSV has no useful speeds,
+    # fallback_speed is used everywhere.
+    velocity_scale: 1.0
+    max_speed: 4.0
+    fallback_speed: 2.0
+
+    # Publish RViz markers for the path and current target on "waypoints_viz"
+    publish_markers: true

@@ -1,0 +1,30 @@
+reactive_node:
+  ros__parameters:
+    # Values validated in sim (7 laps, no contact on levine_blocked), with
+    # speeds reduced for first on-car runs. Raise speed_straight gradually
+    # once the car corners reliably.
+    max_range: 4.0
+    smoothing_window: 5
+    bubble_radius_m: 0.25
+    disparity_threshold_m: 0.3
+    forward_fov_deg: 170.0
+    steer_alpha: 0.35
+    bubble_trigger_dist: 0.6
+    reverse_speed: 0.5
+    reverse_enter_clearance: 0.3
+    reverse_exit_clearance: 0.8
+    max_steering_angle: 0.4189
+
+    # Speed tiers - conservative for hardware. Sim-proven values were
+    # 3.5 / 2.0 / 1.0.
+    speed_straight: 2.0
+    speed_mild: 1.2
+    speed_sharp: 0.8
+    steer_thresh_mild: 0.1745
+    steer_thresh_sharp: 0.3491
+
+    # Clearance-based braking (see reactive_node.cpp)
+    clearance_speed_gain: 1.5
+    clearance_safe_dist: 0.3
+    clearance_cone_deg: 10.0
+    speed_min: 0.5

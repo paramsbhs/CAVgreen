@@ -1,0 +1,18 @@
+pure_pursuit_node:
+  ros__parameters:
+    # Hardware: start conservative. Particle-filter pose is noisier and
+    # ~25 Hz, so use a longer lookahead than sim to avoid oscillation.
+    lookahead_distance: 1.8
+    lookahead_gain: 0.5
+    lookahead_min: 1.2
+    lookahead_max: 2.5
+
+    max_steering_angle: 0.4189
+
+    # Keep speeds low for first on-car runs; raise velocity_scale once
+    # tracking is stable.
+    velocity_scale: 0.5
+    max_speed: 2.0
+    fallback_speed: 1.0
+
+    publish_markers: true

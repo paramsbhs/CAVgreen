@@ -1,0 +1,8 @@
+mpc_node:
+  ros__parameters:
+    # Waypoint CSV path is injected by the launch file (waypoint_csv).
+    # MPC weights/horizon live in mpc_config in the node; expose here only
+    # what the node declares as ROS parameters.
+    max_speed: 4.0
+    velocity_scale: 1.0
+    publish_markers: true

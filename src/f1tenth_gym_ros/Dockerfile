@@ -50,5 +50,16 @@ RUN source /opt/ros/foxy/setup.bash && \
     rosdep install -i --from-path src --rosdistro foxy -y && \
     colcon build
 
+# MPC lab: QP solver stack. This layer must stay LAST and must repin
+# setuptools, because every piece fights the others on py3.8/foxy:
+#  - stock pip can't parse cvxpy's metadata (needs pip upgrade),
+#  - new pip hard-rejects f1tenth_gym's malformed metadata (so run after it),
+#  - cvxpy drags in setuptools>65, which breaks colcon/ament_python builds
+#    (needs importlib_metadata.EntryPoints and new `packaging`), so force
+#    setuptools back to 59.6.0 — cvxpy still imports fine with it.
+RUN python3 -m pip install -U pip && \
+    python3 -m pip install "cvxpy==1.3.2" && \
+    python3 -m pip install "setuptools==59.6.0"
+
 WORKDIR '/sim_ws'
 ENTRYPOINT ["/bin/bash"]

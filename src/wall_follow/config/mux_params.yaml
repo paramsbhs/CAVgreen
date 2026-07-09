@@ -3,10 +3,24 @@ ackermann_mux:
     # Topics fed into the mux. Higher priority wins.
     # safety_node MUST have higher priority so its brake command cannot be
     # overridden by wall_follow while an emergency is active.
+    # Run exactly ONE navigation source at a time; they share priority 10 and
+    # the timeout silences whichever is not running.
     topics:
-      navigation:
+      wall_follow:
         topic: /drive_wall_follow
-        timeout: 0.5      # seconds — stops car if wall_follow goes silent
+        timeout: 0.5      # seconds — stops car if the algorithm goes silent
+        priority: 10
+      gap_follow:
+        topic: /drive_gap_follow
+        timeout: 0.5
+        priority: 10
+      pure_pursuit:
+        topic: /drive_pure_pursuit
+        timeout: 0.5
+        priority: 10
+      mpc:
+        topic: /drive_mpc
+        timeout: 0.5
         priority: 10
       safety:
         topic: /drive_safety

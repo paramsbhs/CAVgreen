@@ -1,0 +1,8 @@
+mpc_node:
+  ros__parameters:
+    # Hardware: conservative first runs. The MPC solve must fit the control
+    # period on the Jetson - if solve time exceeds ~40 ms, shrink the horizon
+    # TK in mpc_config before raising speeds.
+    max_speed: 2.0
+    velocity_scale: 0.5
+    publish_markers: true
