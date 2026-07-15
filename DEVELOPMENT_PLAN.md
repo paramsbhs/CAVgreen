@@ -106,9 +106,10 @@ Parameters are already defined in `config/{sim,hardware}_params.yaml` — declar
    -r odom:=/pf/pose/odom -p output_csv:=levine_2nd_recorded.csv` while joystick-driving a
    clean lap. (Optional: smooth with `scipy.interpolate.splprep/splev`, resample to 0.1 m.)
 2. Save as `pure_pursuit/waypoints/levine_2nd_recorded.csv` (the hardware launch default).
-3. First run protocol: mux + safety_node up first; `velocity_scale: 0.5`, `max_speed: 2.0`
-   (already the hardware config); someone on the deadman/kill switch; verify tracking in RViz
-   with markers; raise speeds gradually.
+3. First run protocol: mux + safety_node up first; hardware config starts mid-envelope
+   (`max_speed: 3.5` — the vehicle is race-proven to 6.5 m/s, pure pursuit adds PF pose
+   noise the racers didn't have); someone on the deadman/kill switch; verify tracking in
+   RViz with markers; raise toward the envelope gradually.
 
 ## 3. Phase 2 — Lab 8: MPC
 
@@ -187,9 +188,9 @@ Bring-up order for every car session:
    add it as a submodule) so the whole system is version-controlled together.
 2. `safety_node_hardware_launch.py` — verify a hand in front of the lidar brakes the car at
    low speed **before every autonomous run**.
-   - ⚠ `safety_node/config/hardware_params.yaml` has `ttc_threshold: 0.35` while its comment
-     says start at 1.0 s. If 0.35 was deliberately tuned on-car, fix the comment; if not,
-     start at 1.0 and tune down.
+   - `ttc_threshold: 0.35` is race-proven (competition-tested with wall_follow at up to
+     6.5 m/s). The wall_follow + safety_node hardware configs are the authoritative
+     baseline for the vehicle envelope: **6.5 m/s straights / 3.3 m/s corners**.
 3. Localization (PF, §2.4) when running pure_pursuit/MPC.
 4. One navigation node via its `*_hardware_launch.py` (mux arbitrates; safety wins).
 5. Joystick deadman ready; speeds start at hardware-config defaults.
@@ -201,9 +202,9 @@ Bring-up order for every car session:
 | M1 | Pure pursuit laps in sim | ≥5 clean laps, mean cross-track < 0.15 m |
 | M2 | SLAM map of Levine 2nd | `levine_2nd.pgm/.yaml` committed, loop closed |
 | M3 | PF localization stable | pose track survives 2 joystick laps without divergence |
-| M4 | Pure pursuit on car | 1 clean lap at 2 m/s (Deliverable 3 video) |
+| M4 | Pure pursuit on car | 1 clean lap at 3.5 m/s (Deliverable 3 video) |
 | M5 | MPC laps in sim | ≥5 clean laps, zero solver failures (Deliverable 2 video) |
-| M6 | MPC on car | 1 clean lap at 2 m/s, p95 solve < 40 ms |
+| M6 | MPC on car | 1 clean lap at 3.5 m/s, p95 solve < 40 ms |
 
 Sequence M1 → M5 can proceed entirely in sim while car time is scarce; M2–M4 need the car.
 

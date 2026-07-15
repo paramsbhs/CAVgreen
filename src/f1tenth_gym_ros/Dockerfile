@@ -32,7 +32,8 @@ RUN apt-get update --fix-missing && \
                        python3-pip \
                        libeigen3-dev \
                        tmux \
-                       ros-foxy-rviz2
+                       ros-foxy-rviz2 \
+                       ros-foxy-slam-toolbox
 RUN apt-get -y dist-upgrade
 RUN pip3 install transforms3d
 

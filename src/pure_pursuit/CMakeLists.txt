@@ -61,6 +61,7 @@ install(DIRECTORY
   launch
   config
   waypoints
+  maps
   DESTINATION share/${PROJECT_NAME}
 )
 

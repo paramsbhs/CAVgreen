@@ -1,8 +1,9 @@
 mpc_node:
   ros__parameters:
-    # Hardware: conservative first runs. The MPC solve must fit the control
-    # period on the Jetson - if solve time exceeds ~40 ms, shrink the horizon
-    # TK in mpc_config before raising speeds.
-    max_speed: 2.0
-    velocity_scale: 0.5
+    # Vehicle envelope is race-proven to 6.5 m/s (wall_follow competition
+    # config with ttc 0.35 active); start MPC mid-envelope. The solve must
+    # also fit the control period on the Jetson - if solve time exceeds
+    # ~40 ms, shrink the horizon TK in mpc_config before raising speeds.
+    max_speed: 3.5
+    velocity_scale: 1.0
     publish_markers: true

@@ -94,8 +94,11 @@ class GymBridge(Node):
         scan_fov = self.get_parameter('scan_fov').value
         scan_beams = self.get_parameter('scan_beams').value
         self.angle_min = -scan_fov / 2.
-        self.angle_max = scan_fov / 2.
         self.angle_inc = scan_fov / scan_beams
+        # angle_max must equal the angle of the LAST beam, i.e. angle_min +
+        # (N-1)*increment. Publishing scan_fov/2 implies N+1 beams, which makes
+        # strict consumers (slam_toolbox/karto) reject every scan.
+        self.angle_max = self.angle_min + self.angle_inc * (scan_beams - 1)
         self.ego_namespace = self.get_parameter('ego_namespace').value
         ego_odom_topic = self.ego_namespace + '/' + self.get_parameter('ego_odom_topic').value
         self.scan_distance_to_base_link = self.get_parameter('scan_distance_to_base_link').value

@@ -15,11 +15,13 @@ reactive_node:
     reverse_exit_clearance: 0.8
     max_steering_angle: 0.4189
 
-    # Speed tiers - conservative for hardware. Sim-proven values were
-    # 3.5 / 2.0 / 1.0.
-    speed_straight: 2.0
-    speed_mild: 1.2
-    speed_sharp: 0.8
+    # Speed tiers. The vehicle envelope is race-proven to 6.5 m/s straights /
+    # 3.3 m/s corners (wall_follow competition config, ttc 0.35 active), so
+    # run gap_follow at its sim-proven speeds directly; raise toward the
+    # envelope only after clean laps on the real track.
+    speed_straight: 3.5
+    speed_mild: 2.0
+    speed_sharp: 1.0
     steer_thresh_mild: 0.1745
     steer_thresh_sharp: 0.3491
 
