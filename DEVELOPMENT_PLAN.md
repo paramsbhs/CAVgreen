@@ -199,7 +199,7 @@ Bring-up order for every car session:
 
 | # | Milestone | Exit criterion |
 |---|---|---|
-| M1 | Pure pursuit laps in sim | ≥5 clean laps, mean cross-track < 0.15 m |
+| M1 | Pure pursuit laps in sim | ✅ done 2026-07-15: 7 laps @ 19.9 s, mean cross-track 0.069 m, no wall contact |
 | M2 | SLAM map of Levine 2nd | `levine_2nd.pgm/.yaml` committed, loop closed |
 | M3 | PF localization stable | pose track survives 2 joystick laps without divergence |
 | M4 | Pure pursuit on car | 1 clean lap at 3.5 m/s (Deliverable 3 video) |
